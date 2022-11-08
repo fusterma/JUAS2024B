@@ -1,6 +1,5 @@
 # MAD-X WORKSHOP JUAS 2023
-** Material based on CAS 2022 from D. Gamba and G. Sterbini** 
----
+** Material based on CAS 2022 from D. Gamba and G. Sterbini ** 
 
 During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)**  and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/) and [cpymad](http://hibtc.github.io/cpymad/index.html) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
 
@@ -15,11 +14,14 @@ Finally, in [appendix](#appendix-python-packages) you will find links and cheats
 # A very short introduction to Python
 You can find several nice courses, videos and resources on the internet. Here you have a couple of suggestions you can find on YouTube:
 
-<p align="center">
-<a href=http://www.youtube.com/watch?v=kqtD5dpn9C8><img src="http://img.youtube.com/vi/kqtD5dpn9C8/0.jpg" alt="Python for Beginners - Learn Python in 1 Hour" width="40%"/></a> 
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href=http://www.youtube.com/watch?v=rfscVS0vtbw><img src="http://img.youtube.com/vi/rfscVS0vtbw/0.jpg" alt="Learn Python - Full Course for Beginners" width="40%"/></a>
-</p>
+[Python for Beginners - Learn Python in 1 Hour](http://www.youtube.com/watch?v=kqtD5dpn9C8)
+
+<img src="http://img.youtube.com/vi/kqtD5dpn9C8/0.jpg" alt="Python for Beginners - Learn Python in 1 Hour" width="40%"/> 
+
+[Learn Python - Full Course for Beginners]
+<img src="http://img.youtube.com/vi/rfscVS0vtbw/0.jpg" alt="Learn Python - Full Course for Beginners" width="40%"/>
+
+
 
 You can also follow the tutorials in:
 
