@@ -21,7 +21,7 @@ You can find several nice courses, videos and resources on the internet. Here yo
 <a href=http://www.youtube.com/watch?v=rfscVS0vtbw><img src="http://img.youtube.com/vi/rfscVS0vtbw/0.jpg" alt="Learn Python - Full Course for Beginners" width="40%"/></a>
 </p>
 
-And also follow the tutorials in:
+You can also follow the tutorials in:
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 [Python tutorial](https://www.kaggle.com/code/colinmorris/hello-python)
