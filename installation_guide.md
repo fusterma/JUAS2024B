@@ -1,7 +1,7 @@
 # INSTALLATION AND TEST GUIDE MAD-X WORKSHOP JUAS 2023
 ** Material based on CAS 2022 from D. Gamba and G. Sterbini ** 
 
-During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)**  and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/) and [cpymad](http://hibtc.github.io/cpymad/index.html) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
+During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)**  and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [cpymad](http://hibtc.github.io/cpymad/index.html) and [pandas](https://pandas.pydata.org/) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
 
 A basic knowledge of Python is assumed. If you are not familiar with Python, you can find a few resources to fill the gap in the following sections. Do not worry about the theory for the moment (it will be discussed in details during the school) but focus on the Python syntax and data types (tuples, lists,...).
 
