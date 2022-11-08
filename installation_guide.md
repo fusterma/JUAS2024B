@@ -1,4 +1,4 @@
-# MAD-X WORKSHOP JUAS 2023
+# INSTALLATION AND TEST GUIDE MAD-X WORKSHOP JUAS 2023
 ** Material based on CAS 2022 from D. Gamba and G. Sterbini ** 
 
 During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)**  and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/) and [cpymad](http://hibtc.github.io/cpymad/index.html) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
@@ -15,6 +15,7 @@ Finally, in [appendix](#appendix-python-packages) you will find links and cheats
 You can find several nice courses, videos and resources on the internet. Here you have a couple of suggestions you can find on YouTube:
 
 [Python for Beginners - Learn Python in 1 Hour](http://www.youtube.com/watch?v=kqtD5dpn9C8)
+
 [Learn Python - Full Course for Beginners](http://img.youtube.com/vi/rfscVS0vtbw)
 
 You can also follow the tutorials in:
@@ -36,11 +37,7 @@ You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/
 
 ## Installation
 
-We suggest to install the **Anaconda** distribution from https://www.anaconda.com/distribution/
-
-<p align="center">
-<a href=https://www.anaconda.com/distribution/><img src="_img_instructions/anaconda.png" alt="" width="70%"/></a>
-</p>
+We suggest to install the **Anaconda** distribution from [here](https://www.anaconda.com/distribution/)
 
 > We suggest to install one of the latest distribution (**for example version Python 3.9**).
 
@@ -73,10 +70,6 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 
 3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following:
 
-    <p align="center">
-    <img src="_img_instructions/upload_5b0618b75e4f4df0facf2a609b9354b5.png" alt="" width="70%"/>
-    </p>
-
     On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command.
     This will be your **working directory**. 
 
@@ -99,23 +92,15 @@ You can leverage python's capability by exploring a galaxy of packages. Below yo
 To get familiar with the *numpy* package have a look at the following [summary poster](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf).
 You can google many other resources, but the one presented of the poster covers the set of instructions you should familiar with.
 
-<p align="center">
-<a href=https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf><img src="_img_instructions/upload_6ffb4d07b1ebb895528f2a34aae41ec6.png" alt="" width="90%"/></a>
-</p>
-
 ### The *matplotlib* package
 To get familiar with the *matplotlib* package have a look at the following [summary poster](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf).
 
-<p align="center">
-<a href=https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf><img src="_img_instructions/upload_4b54812812e21978b600b860ba1ddf5b.png" alt="" width="90%"/></a>
-</p>
-
+### The *cpymad* package
+To get familiar with the *cpymad* package have a look at the following [link](https://hibtc.github.io/cpymad/).
 
 ### The *pandas* package (optional)
 To get familiar with the *pandas* package have a look at the following [summary poster](
 https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf).
 
-<p align="center">
-<a href=https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf><img src="_img_instructions/upload_90383c01e29d29fb6a5516c613e22c4d.png" alt="" width="90%"/></a>
-</p>
+
 
