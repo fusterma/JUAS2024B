@@ -18,16 +18,13 @@ You can find several nice courses, videos and resources on the internet. Here yo
 
 <img src="http://img.youtube.com/vi/kqtD5dpn9C8/0.jpg" alt="Python for Beginners - Learn Python in 1 Hour" width="40%"/> 
 
-[Learn Python - Full Course for Beginners]
+[Learn Python - Full Course for Beginners](http://img.youtube.com/vi/rfscVS0vtbw)
 <img src="http://img.youtube.com/vi/rfscVS0vtbw/0.jpg" alt="Learn Python - Full Course for Beginners" width="40%"/>
 
 
-
 You can also follow the tutorials in:
-
-&nbsp;&nbsp;&nbsp;&nbsp;
 [Python tutorial](https://www.kaggle.com/code/colinmorris/hello-python)
-</p>
+
 
 ### Test Python on a web page
 
