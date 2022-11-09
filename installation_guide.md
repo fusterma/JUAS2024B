@@ -83,14 +83,12 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 pip install numpy matplotlib jupyter jupyterlab cpymad
 ```
 
-5. **Just before the start of the course**, we will ask you to download the **latest version** of the [MAD-XworkshopJUAS2023] repository in your **working directory**.
-
-6. **Optional:** instead of running Jupyter lab within a browser, you can try to install and the [jupyterlab-desktop](https://github.com/jupyterlab/jupyterlab-desktop) application.
+5. **Just before the start of the course**, we will ask you to download the **latest version** of the MAD-XworkshopJUAS2023 repository in your **working directory**.
 
 ---
 ## Appendix: Python Packages
 
-You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy` and `matplotlib`) and some very popular ones. 
+You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `input` method, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb)) 
 
 ### The *numpy* package
 To get familiar with the *numpy* package have a look at the following [summary poster](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf).
