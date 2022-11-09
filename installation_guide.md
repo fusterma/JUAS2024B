@@ -70,7 +70,7 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 
 3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following (in the case of the JupyterLab):
 
-</p>
+<p align="center">
 <img src="JupyterLab.png" width="40%"/></a>
 </p>
 
