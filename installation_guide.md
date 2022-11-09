@@ -33,7 +33,7 @@ In this section we will explain how to install Python and Jupyter on your laptop
 JupyterLab is a user-friendly environment to work with Python. 
 You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/en/stable/).
 
-> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#Launch-jupyter) and [test that everything works](#test-that-everything-works).
+> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#Launch-jupyter) and test that everything works downloading and executing [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb).
 
 ## Installation
 
@@ -42,7 +42,7 @@ We suggest to install the **Anaconda** distribution from [here](https://www.anac
 > We suggest to install one of the latest distribution (**for example version Python 3.9**).
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate.
-After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter) and then [test that everything works](PythonBasicTutorial/PythonBasic.ipynb):
+After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter) and then test that everything works downloading and executing [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb).
 
 # Launch Jupyter
 
@@ -68,7 +68,11 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
     ```
     
 
-3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following:
+3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following (in the case of the JupyterLab):
+
+</p>
+<img src="JupyterLab.png" width="40%"/></a>
+</p>
 
     On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command.
     This will be your **working directory**. 
