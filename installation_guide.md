@@ -16,7 +16,7 @@ You can find several nice courses, videos and resources on the internet. Here yo
 
 [Python for Beginners - Learn Python in 1 Hour](http://www.youtube.com/watch?v=kqtD5dpn9C8)
 
-[Learn Python - Full Course for Beginners](http://img.youtube.com/vi/rfscVS0vtbw)
+[Learn Python - Full Course for Beginners](http://www.youtube.com/watch?v=rfscVS0vtbw)
 
 You can also follow the tutorials in:
 [Python tutorial](https://www.kaggle.com/code/colinmorris/hello-python)
@@ -33,7 +33,7 @@ In this section we will explain how to install Python and Jupyter on your laptop
 JupyterLab is a user-friendly environment to work with Python. 
 You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/en/stable/).
 
-> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#launch-jupyter-lab) and [test that everything works](#test-that-everything-works).
+> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#Launch-jupyter) and [test that everything works](#test-that-everything-works).
 
 ## Installation
 
@@ -42,15 +42,15 @@ We suggest to install the **Anaconda** distribution from [here](https://www.anac
 > We suggest to install one of the latest distribution (**for example version Python 3.9**).
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate.
-After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter-lab) and then [test that everything works](#test-that-everything-works):
+After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter) and then [test that everything works](PythonBasicTutorial/PythonBasic.ipynb):
 
-## Launch Jupyter
+# Launch Jupyter
 
 Once the installation of **Anaconda** is finalised or within your existing Python distribution, you should be able to start Jupyter from a terminal:
 
 1. Open a (Anaconda) terminal on your operating system:
     - **Windows:**
-        From the Start menu, search for and open “Anaconda Prompt”:
+        From the Start menu, search for and open “Anaconda Prompt”.
     - **macOS:**
         Open Launchpad, then click the terminal icon.
     - **Linux:**
@@ -73,7 +73,7 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
     On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command.
     This will be your **working directory**. 
 
-4. Start playing with Python!  Please, make sure to go throw all the [PythonBasicTutorial/PythonBasic.ipynb](PythonBasicTutorial/PythonBasic.ipynb) (material based on the tutorial prepared by *Simon Albright*)to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
+4. Start playing with Python!  Please, make sure to go throw all the [Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (material based on the tutorial prepared by *Simon Albright*)to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
 
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad
