@@ -5,3 +5,4 @@ For the MAD-X workshop at JUAS 2023 we will be using Python as scripting languag
 
 In order to be ready for the workshop please follow the [instructions](./installation_guide.md) **before coming** to JUAS to **prepare yourself** and **your laptop** for the course.
 
+Then, for the workshop we will ask you to download the last version of this repository where you will find the material for the course.
