@@ -1,7 +1,7 @@
-# INSTALLATION AND TEST GUIDE MAD-X WORKSHOP JUAS 2023
+# INSTALLATION AND TEST GUIDE FOR THE MAD-X WORKSHOP AT JUAS 2023
 ** Material based on CAS 2022 from D. Gamba and G. Sterbini ** 
 
-During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)**  and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [cpymad](http://hibtc.github.io/cpymad/index.html) and [pandas](https://pandas.pydata.org/) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
+During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)** environment and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [cpymad](http://hibtc.github.io/cpymad/index.html) and [pandas](https://pandas.pydata.org/) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
 
 A basic knowledge of Python is assumed. If you are not familiar with Python, you can find a few resources to fill the gap in the following sections. Do not worry about the theory for the moment (it will be discussed in details during the school) but focus on the Python syntax and data types (tuples, lists,...).
 
@@ -18,8 +18,7 @@ You can find several nice courses, videos and resources on the internet. Here yo
 
 [Learn Python - Full Course for Beginners](http://www.youtube.com/watch?v=rfscVS0vtbw)
 
-You can also follow the tutorials in:
-[Python tutorial](https://www.kaggle.com/code/colinmorris/hello-python)
+You can also follow the tutorials [here](https://www.kaggle.com/code/colinmorris/hello-python)
 
 
 ### Test Python on a web page
@@ -42,7 +41,7 @@ We suggest to install the **Anaconda** distribution from [here](https://www.anac
 > We suggest to install one of the latest distribution (**for example version Python 3.9**).
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate.
-After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter) and then test that everything works downloading and executing [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb).
+After having installed **Anaconda**, and [verified your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/) - we invite you to start [launching Jupyter Lab](#launch-jupyter) and then test that everything works by downloading into your computer and running [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb).
 
 # Launch Jupyter
 
@@ -71,24 +70,23 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following (in the case of the JupyterLab):
 
 <p align="center">
-<img src="JupyterLab.png" width="60%"/></a>
+<img src="JupyterLab.png" width="80%"/></a>
 </p>
 
-    On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command.
-    This will be your **working directory**. 
+    On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command. This will be your **working directory**. This interface allows you to move quickly through different opened files. 
 
-4. Start playing with Python!  Please, make sure to go throw all the [Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (material based on the tutorial prepared by *Simon Albright*)to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
+4. Now you can start playing with Python!  Please, make sure to go throw all the [Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (material based on the tutorial prepared by *Simon Albright*) to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
 
 ```python
-pip install numpy matplotlib jupyter jupyterlab cpymad
+pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
 
-5. **Just before the start of the course**, we will ask you to download the **latest version** of the MAD-XworkshopJUAS2023 repository in your **working directory**.
+5. **Just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
 ---
 ## Appendix: Python Packages
 
-You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `input` method, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb)) 
+You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `call`, `table.twiss.dframe`, `table.summ.dframe` and `table.track.dframe` methods, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb)) 
 
 ### The *numpy* package
 To get familiar with the *numpy* package have a look at the following [summary poster](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf).
