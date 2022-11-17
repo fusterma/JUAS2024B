@@ -36,4 +36,4 @@
 ! TWISS
 ! *********************************************************************
 
-!twiss, file=MyfirstFODO.madx;
+!twiss, file=MyfirstFODO.txt;
