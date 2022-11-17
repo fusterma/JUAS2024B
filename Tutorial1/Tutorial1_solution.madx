@@ -37,7 +37,5 @@ use, sequence=myCell;
 ! TWISS
 ! *********************************************************************
 title, 'My first twiss';
-twiss, file=MyfirstFODO.madx;
+twiss, file=MyfirstFODO.txt;
 plot, haxis=s, vaxis=betx,bety,dx,colour=100, title="test",file=MyfirstFODO;
-
-value myK;
