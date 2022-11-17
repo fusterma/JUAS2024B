@@ -1,5 +1,5 @@
 # INSTALLATION AND TEST GUIDE FOR THE MAD-X WORKSHOP AT JUAS 2023
-** Material based on CAS 2022 from D. Gamba, G. Sterbini and S. Albright ** 
+**Material based on CAS 2022 from D. Gamba, G. Sterbini and S. Albright** 
 
 During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)** environment and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [cpymad](http://hibtc.github.io/cpymad/index.html) and [pandas](https://pandas.pydata.org/) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
 
@@ -18,7 +18,7 @@ You can find several nice courses, videos and resources on the internet. Here yo
 
 [Learn Python - Full Course for Beginners](http://www.youtube.com/watch?v=rfscVS0vtbw)
 
-You can also follow the tutorials [here](https://www.kaggle.com/code/colinmorris/hello-python)
+You can also follow the tutorials [here](https://www.kaggle.com/code/colinmorris/hello-python).
 
 
 ### Test Python on a web page
@@ -28,7 +28,7 @@ If you are not familiar with Python and you have not it installed on your laptop
 ---
 # Software Setup
 
-In this section we will explain how to install Python and Jupyter on your laptop.
+In this section we will explain how to install Python and JupyterLab on your laptop.
 JupyterLab is a user-friendly environment to work with Python. 
 You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/en/stable/).
 
@@ -52,8 +52,8 @@ Then you can check for the installed packages by typing in the **terminal** (Mac
 
 ```
 pip list
-
 ```
+
 If you have some missing packages install them independently, e.g.:
 
 ```python
