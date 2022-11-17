@@ -42,7 +42,14 @@ We suggest to install the **Anaconda** distribution from [here](https://www.anac
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate. After having installed **Anaconda** we invite you to [verify your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/).
 
-Then, check that you have the main python packages (`numpy`, `matplotlib`, `jupyter`, `jupyterlab`, `cpymad` and `pandas`) needed for the workshop available by typing in the **terminal** (Mac and Linux) or in the **cmd window** (Windows) the following command:
+Then, check that you have installed the main python packages (`numpy`, `matplotlib`, `jupyter`, `jupyterlab`, `cpymad` and `pandas`) needed for the workshop. In order to do that you can use the `pip` package management system that you may need to install using the following command:
+
+```
+conda install pip
+``` 
+
+Then you can check for the installed packages by typing in the **terminal** (Mac and Linux) or in the **cmd window** or **Anaconda Prompt** (Windows) the following command:
+
 ```
 pip list
 
@@ -53,7 +60,7 @@ If you have some missing packages install them independently, e.g.:
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
 
-Then, we invite you to start [launching Jupyter Lab](#launch-jupyter) and test that everything works by running in your computer [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)).
+Finally, we invite you to start [launching Jupyter Lab](#launch-jupyter) and test that everything works by running in your computer [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)).
 
 # Launch Jupyter
 
@@ -88,7 +95,7 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 
 4. Now you can start playing with Python!  
 
-Please, make sure to go throw all the [Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)) to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
+Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)) to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
 
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
