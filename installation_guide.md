@@ -100,11 +100,22 @@ Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/Py
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
+If your installation problems persist you can check if they are compiled in [this list](#Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.Sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
 ---
-## Appendix: Python Packages
+## Appendix A: Installation pitfalls
+
+In the following appendix we collect some problems that you can experience depending on your platform and installation set-up. 
+
+1) On some installations, when instanciating the madx object from cpymad one has to set ```myMad = Madx(stdout=False)```, otherwise cpymad doesn’t work.
+
+2) On some windows installations where the user has set the comma “,” as decimal separator, cpymad seems to badly interpret values like “3.14” (i.e. with a “,”) as string instead of numbers. 
+
+3) Sometimes the MAD-X errors are visible in the jupyter notebook, sometimes indeed in the terminal behind. 
+
+## Appendix B: Python Packages
 
 You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `call`, `table.twiss.dframe`, `table.summ.dframe` and `table.track.dframe` methods, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py))).
 
