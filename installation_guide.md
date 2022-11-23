@@ -100,7 +100,7 @@ Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/Py
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
-If your installation problems persist you can check if they are compiled in [this list](#Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.Sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
+If your installation problems persist you can check if they are compiled in [this list](#Appendix A: Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.Sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
