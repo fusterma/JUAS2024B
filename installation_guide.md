@@ -6,7 +6,7 @@ During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)*
 A basic knowledge of Python is assumed. If you are not familiar with Python, you can find a few resources to fill the gap in the following sections. Do not worry about the theory for the moment (it will be discussed in details during the school) but focus on the Python syntax and data types (tuples, lists,...).
 
 After [a short introduction](#a-very-short-introduction-to-python), where we provided some useful links to get familiar with Python, we will focus on the [software setup](#software-setup). 
-Finally, in [appendix](#appendix-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
+Finally, in [appendix B](#appendix-B-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
 
 > **Important:** we kindly ask you to go throw this document **before coming** to JUAS, such as to **prepare yourself** (and **your laptop**) for the course. 
 
@@ -100,7 +100,7 @@ Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/Py
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
-If your installation problems persist you can check if they are compiled in the list of Appendix A (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
+If your installation problems persist you can check if they are compiled in the list of [appendix A](#appendix-A-installation-pitfalls) (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
