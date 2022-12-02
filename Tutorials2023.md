@@ -4,8 +4,8 @@
 #### Tutorial 1: My first accelerator, a FODO cell.
 
 #### Objectives:
-    - Define a simple lattice.
-    - Compute the optics using the TWISS MAD-X engine.
+   - Define a simple lattice.
+   - Compute the optics using the TWISS MAD-X engine.
     
 1.    Define the lattice MAD-X input file (.madx) for a FODO cell with the following characteristics:
     -    Length of the cell, Lcell = 100 m.
@@ -15,7 +15,7 @@
     
 <p align="center">
 <a 
-<img src="" alt="" width="90%"/></a>
+<img src="./Figures/Tutoria1_FODO.png" alt="" width="90%"/></a>
 </p>
 Figure 1: Scheme of a FODO lattice.
 
