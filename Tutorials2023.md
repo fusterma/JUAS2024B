@@ -14,7 +14,7 @@
     -    Each quadrupole has a focal length f = 200 m. (HINT: k1 x Lq= 1/f). 
     
 <p align="center">
-<img src="Figures/Tutorial1_FODO.png" width="80%"/></a>
+<img src="Figures/Tutorial1_FODO.png" width="50%"/></a>
 </p>
 Figure 1: Scheme of a FODO lattice.
 
@@ -27,21 +27,19 @@ Figure 1: Scheme of a FODO lattice.
 #### Tutorial 2: My first matching.
 
 #### Objectives:
-    -  Match the FODO cell of Tutorial 1 using the thin lens approximation.
-    -  Thick and thin lens approximation optics comparison.
-    -  Tune and beta-function dependence on K1.
+   -  Match the FODO cell of Tutorial 1 using the thin lens approximation.
+   -  Thick and thin lens approximation optics comparison.
+   -  Tune and beta-function dependence on K1.
 
 Considering the periodic solution of the equation of motion of a FODO cell and imposing the thin lens approximation and the stability condition one can get the following relations between optics parameters and magnets properties:
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial2_Figure1.png" width="50%"/></a>
 </p>
 Figure 2: FODO thin lens approximation phase advance as a function of quadrupole properties.
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial2_Figure2.png" width="50%"/></a>
 </p>
 Figure 3: FODO thin lens approximation beta-function as a function of quadrupole properties.
 
@@ -57,14 +55,13 @@ Figure 3: FODO thin lens approximation beta-function as a function of quadrupole
 #### Tutorial 3: Building a circular machine.
 
 #### Objectives:
-    - Build a circular machine by introducing dipoles into the FODO cell of Tutorial 1.
-    - Use the MATCHING MAD-X engine to compute the strength of the magnets to get a desired tune.
+   - Build a circular machine by introducing dipoles into the FODO cell of Tutorial 1.
+   - Use the MATCHING MAD-X engine to compute the strength of the magnets to get a desired tune.
 
 1.    Consider now the FODO cell of Tutorial 2 and add 4 sector dipoles of 15 m long (assume 5 m of drift space between magnets). Consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial3_FODO.png" width="50%"/></a>
 </p>
 Figure 4: Scheme of a FODO cell with dipoles.
 
@@ -84,12 +81,11 @@ Figure 4: Scheme of a FODO cell with dipoles.
 #### Tutorial 4: Natural chromaticity.
 
 #### Objectives:
-    - Quantify the natural chromaticity of a FODO cell (from Tutorial 3).
-    - First tracking of particles using the tracking MAD-X engine to study the beam dynamics for different initial conditions.
+   - Quantify the natural chromaticity of a FODO cell (from Tutorial 3).
+   - First tracking of particles using the tracking MAD-X engine to study the beam dynamics for different initial conditions.
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial4_chroma.png" width="50%"/></a>
 </p>
 Figure 5: Chromaticity effect illustration.
 
@@ -110,21 +106,19 @@ Figure 5: Chromaticity effect illustration.
 #### Tutorial 5: Chromaticity correction and non-linearities.
 
 #### Objectives:
-    - Introduce sextupoles in the FODO cell for chromaticity correction.
-    - Non-linearities impact on the beam dynamics.
+   - Introduce sextupoles in the FODO cell for chromaticity correction.
+   - Non-linearities impact on the beam dynamics.
 
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial5_chroma_correction.png" width="50%"/></a>
 </p>
 Figure 6: Chromaticity correction scheme.
 
 1. Add 0.5 m long sextupoles attached to the quadrupoles. With a matching block adjust the vertical and horizontal chromaticity of the cell (global parameters: DQ1 and DQ2) to zero, by powering the two sextupoles (K21 and K22). 
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial5_FODO.png" width="50%"/></a>
 </p>
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 
@@ -141,14 +135,13 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 #### Tutorial 6: Building a transfer line.
 
 #### Objectives:
-    - Build a transfer line and compute the optics for some initial conditions.
-    - Matching a transfer line.
+   - Build a transfer line and compute the optics for some initial conditions.
+   - Matching a transfer line.
 
 1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 4 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Can you find a periodic solution?
 
 <p align="center">
-<a 
-<img src="" alt="" width="90%"/></a>
+<img src="Figures/Tutorial6_TranferLine.png" width="50%"/></a>
 </p>
 Figure 6: Transfer line scheme.
 
