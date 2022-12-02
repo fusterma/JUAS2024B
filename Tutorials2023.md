@@ -14,8 +14,7 @@
     -    Each quadrupole has a focal length f = 200 m. (HINT: k1 x Lq= 1/f). 
     
 <p align="center">
-<a 
-<img src="./Figures/Tutoria1_FODO.png" alt="" width="90%"/></a>
+<img src="Figures/Tutorial1_FODO.png" width="80%"/></a>
 </p>
 Figure 1: Scheme of a FODO lattice.
 
