@@ -34,12 +34,12 @@ Figure 1: Scheme of a FODO lattice.
 Considering the periodic solution of the equation of motion of a FODO cell and imposing the thin lens approximation and the stability condition one can get the following relations between optics parameters and magnets properties:
 
 <p align="center">
-<img src="Figures/Tutorial2_Figure1.png" width="50%"/></a>
+<img src="Figures/Tutorial2_Figure1.png" width="40%"/></a>
 </p>
 Figure 2: FODO thin lens approximation phase advance as a function of quadrupole properties.
 
 <p align="center">
-<img src="Figures/Tutorial2_Figure2.png" width="50%"/></a>
+<img src="Figures/Tutorial2_Figure2.png" width="40%"/></a>
 </p>
 Figure 3: FODO thin lens approximation beta-function as a function of quadrupole properties.
 
@@ -61,7 +61,7 @@ Figure 3: FODO thin lens approximation beta-function as a function of quadrupole
 1.    Consider now the FODO cell of Tutorial 2 and add 4 sector dipoles of 15 m long (assume 5 m of drift space between magnets). Consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<img src="Figures/Tutorial3_FODO.png" width="50%"/></a>
+<img src="Figures/Ttorial3_FODO.png" width="40%"/></a>
 </p>
 Figure 4: Scheme of a FODO cell with dipoles.
 
