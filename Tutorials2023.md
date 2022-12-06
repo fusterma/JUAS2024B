@@ -164,11 +164,11 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 Figure 6: Transfer line scheme.
 </p>
 
-2. Can you find an initial conditions (IC) solution starting from ($β_x$ , $α_x$ , $β_y$ , $α_y$) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ )?
+2. Can you find an initial conditions (IC) solution starting from ( $β_x$ , $α_x$ , $β_y$ , $α_y$) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ )?
 
-3. Starting from ( $β_x$ , $α_x$ , $β_y$ , $α_y$) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
+3. Starting from ( $β_x$ , $α_x$ , $β_y$ , $α_y$ ) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
 
-4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
+4. Starting from ( $β_x$ , $α_x$ , $β_y$ , $α_y$ ) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
 
 **BONUS:
 
