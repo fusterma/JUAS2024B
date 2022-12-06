@@ -9,10 +9,10 @@
     
 1.    Define the lattice MAD-X input file (.madx) for a FODO cell with the following characteristics:
 
-   -    Length of the cell, Lcell = 100 m.
-   -    Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq).
-   -    Put the start of the first quadrupole at the start of the sequence.
-   -    Each quadrupole has a focal length f = 200 m. (HINT: k1 x Lq= 1/f). 
+      - Length of the cell, Lcell = 100 m.
+      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq).
+      - Put the start of the first quadrupole at the start of the sequence.
+      - Each quadrupole has a focal length f = 200 m. (HINT: k1 x Lq= 1/f). 
     
 <p align="center">
 <img src="Figures/Tutorial1_FODO.png" width="50%"/>
@@ -166,10 +166,10 @@ Figure 6: Transfer line scheme.
 
 2. Can you find an initial conditions (IC) solution starting from (βx,αx,βy,αy) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ($β_x^{end}$,$α_x^{end}$,$β_y^{end}$,$α_y^{end}$)?
 
-3. Starting from (βx ,αx,βy,αy) = (1, 0, 2, 0) m match the line to ($β_x^{end}$,$α_x^{end}$,$β_y^{end}$,$α_y^{end}$) = (2, 0, 1, 0) m at the end.
+3. Starting from (βx,αx,βy,αy) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
 
-4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ($β_x^{end}$,$α_x^{end}$,$β_y^{end}$,$α_y^{end}$) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
+4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
 
 **BONUS:
 
-5. Consider that the quadrupoles have an excitation current of a 100 A m2 and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
+5. Consider that the quadrupoles have an excitation current of a 100 A $m^2$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
