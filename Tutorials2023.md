@@ -168,7 +168,7 @@ Figure 6: Transfer line scheme.
 
 3. Starting from (βx,αx,βy,αy) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
 
-4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
+4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ($βx^{end}$,$αx^{end}$,$βy^{end}$, $αy^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
 
 **BONUS:
 
