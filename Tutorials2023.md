@@ -138,9 +138,9 @@ Figure 6: Chromaticity correction scheme.
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 </p>
 
-2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= $10^{-2}. Compare the results obtained in the Tutorial 4.
+2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= $10^{-2}$. Compare the results obtained in the Tutorial 4.
 
-3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= $10^{-2}. Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
+3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= $10^{-2}$. Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
 
 4. Track now a particle with initial coordinates x, y, px, py = (100, 100, 0, 0) mm in 100 cells. How does the particle move cell after cell? Do you see the tunes? What is going on?
 
@@ -164,11 +164,11 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 Figure 6: Transfer line scheme.
 </p>
 
-2. Can you find an initial conditions (IC) solution starting from (βx,αx,βy,αy) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ($β_x^{end}$,$α_x^{end}$,$β_y^{end}$,$α_y^{end}$)?
+2. Can you find an initial conditions (IC) solution starting from ($β_x$ , $α_x$ , $β_y$ , $α_y$) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ )?
 
-3. Starting from (βx,αx,βy,αy) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
+3. Starting from ( $β_x$ , $α_x$ , $β_y$ , $α_y$) = (1, 0, 2, 0) m match the line to ($βx^{end}$,$αx^{end}$,$βy^{end}$,$αy^{end}$) = (2, 0, 1, 0) m at the end.
 
-4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ($βx^{end}$,$αx^{end}$,$βy^{end}$, $αy^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
+4. Starting from (βx,αx,βy,αy) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ( $β_x^{end}$ , $α_x^{end}$ , $β_y^{end}$ , $α_y^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m-2, respectively. Compute the required gradients for this solution.
 
 **BONUS:
 
