@@ -1,0 +1,31 @@
+! *********************************************************************
+! Definition of parameters
+! *********************************************************************
+
+!Magnet properties
+quadrupoleLenght=0.1;
+cellLength=10;
+
+myK1=.1;// m^-2
+myK2=.1;// m^-2
+myK3=.1;// m^-2
+myK4=.1;// m^-2
+
+! *********************************************************************
+! Definition of magnets
+! ********************************************************************* 
+
+Q: quadrupole, L=quadrupoleLenght;
+
+! *********************************************************************
+! Definition of sequence
+! *********************************************************************
+
+myCell:sequence, refer=center, L=cellLength;
+myStart: marker, at=0;
+q1: Q,K1:=myK1, at=2;
+q2: Q,K1:=myK2, at=4;
+q3: Q,K1:=myK3, at=6;
+q4: Q,K1:=myK4, at=8;
+myEnd: marker, at=10;
+endsequence;
