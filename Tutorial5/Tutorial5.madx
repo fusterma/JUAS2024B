@@ -1,25 +1,27 @@
 ! *********************************************************************
-! Definition of parameters
+! Use the lattice from Tutorial 3 and add the sextupoles
 ! *********************************************************************
 
-l_cell=100;
-quadrupoleLenght=5;
-f=200;
-myK:=1/f/quadrupoleLenght;// m^-2
+!! Sextupole Parameters
+!K2F = ??;
+!K2D = ??;
+!Ls = ??;
 
 ! *********************************************************************
 ! Definition of magnets
 ! ********************************************************************* 
-QF: quadrupole, L=quadrupoleLenght, K1:=myK;
-QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
+
+!SF: SEXTUPOLE, L=Ls, K2:=K2F;
+!SD: SEXTUPOLE, L=Ls, K2:=K2D;
 
 ! *********************************************************************
 ! Definition of sequence
 ! *********************************************************************
-myCell:sequence, refer=entry, L=L_CELL;
-quadrupole1: QF, at=0;
-marker1: marker, at=25;
-quadrupole2: QD, at=50;
-marker2: marker, at=75;
-endsequence;
+
+!JUAS: SEQUENCE, REFER=center, L=100; !it is important to refer to the the center this time, to make it compatible with the makethin 
+!qf: QF, at=0+QF->L/2;
+!S1 : SF, at=5+SF->L/2;
+!b1:  BM, at=10+BM->L/2;
+!...
+!ENDSEQUENCE;
 

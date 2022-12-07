@@ -2,56 +2,46 @@
 ! Definition of parameters
 ! *********************************************************************
 
-option, echo=false, info=false, warn=false;
-l_cell=100;
-quadrupoleLenght=5;
-f=200;
-myK:=1/f/quadrupoleLenght;// m^-2
+!Magnet properties
+!quadrupoleLenght=??;
+!cellLength=??;
+
+!myK1=??;// m^-2
+!myK2=??;// m^-2
+!myK3=??;// m^-2
+!myK4=??;// m^-2
 
 ! *********************************************************************
-! Definition of magnet
+! Definition of magnets
 ! ********************************************************************* 
-QF: quadrupole, L=quadrupoleLenght, K1:=myK;
-QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
 
-
-installMarkers(nn): macro ={
-markernn: marker, at=nn;
-};
-
-N=6;
+!Q: quadrupole, L=??;
 
 ! *********************************************************************
 ! Definition of sequence
 ! *********************************************************************
-myCell:sequence, REFER=centre, L=L_CELL;
-quadrupole1: QF, at=2.5;
-while (N<50) {
-exec, installMarkers($N);
-N=N+1;
-!value N;
-}
-quadrupole2: QD, at=52.5;
-N=56;
-while (N<100) {
-exec, installMarkers($N);
-N=N+1;
-}
-endsequence;
+
+!myCell:sequence, refer=center, L=cellLength;
+!myStart: marker, at=0;
+!q1: Q,K1:=??, at=??;
+!...
+!myEnd: marker, at=10;
+!endsequence;
 
 ! *********************************************************************
 ! Definition of beam
 ! *********************************************************************
-beam, particle=proton, energy=2;
+
+!beam, particle=proton, energy=??;
 
 ! *********************************************************************
-! Use of the sequence
+! Activate the sequence
 ! *********************************************************************
-use, sequence=myCell;
+
+!use, sequence=myCell;
 
 ! *********************************************************************
-! TWISS
+! Twiss
 ! *********************************************************************
-select, flag=twiss, clear;
-select, flag=twiss, column=name, keyword, L, s, betx, alfx, mux, bety, alfy, muy, x, px, y, py, dx, dy, dx, dpx, dy, dpy;
-twiss, file=WithMarkers.txt;
+
+!twiss;

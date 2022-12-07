@@ -6,7 +6,7 @@ During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)*
 A basic knowledge of Python is assumed. If you are not familiar with Python, you can find a few resources to fill the gap in the following sections. Do not worry about the theory for the moment (it will be discussed in details during the school) but focus on the Python syntax and data types (tuples, lists,...).
 
 After [a short introduction](#a-very-short-introduction-to-python), where we provided some useful links to get familiar with Python, we will focus on the [software setup](#software-setup). 
-Finally, in [appendix](#appendix-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
+Finally, in [appendix B](#appendix-B-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
 
 > **Important:** we kindly ask you to go throw this document **before coming** to JUAS, such as to **prepare yourself** (and **your laptop**) for the course. 
 
@@ -32,7 +32,7 @@ In this section we will explain how to install Python and JupyterLab on your lap
 JupyterLab is a user-friendly environment to work with Python. 
 You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/en/stable/).
 
-> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#Launch-jupyter) and test that everything works downloading and executing [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)).
+> If you already have your favorite Python distribution installed on your laptop, including JupyterLab, you might want to skip the [installation](#installation) and jump to [launch Jupyter Lab](#launch-jupyter) and test that everything works downloading and executing [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)).
 
 ## Installation
 
@@ -42,7 +42,7 @@ We suggest to install the **Anaconda** distribution from [here](https://www.anac
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate. After having installed **Anaconda** we invite you to [verify your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/).
 
-Then, check that you have installed the main python packages (`numpy`, `matplotlib`, `jupyter`, `jupyterlab`, `cpymad` and `pandas`) needed for the workshop. In order to do that you can use the `pip` package management system that you may need to install using the following command:
+Then, check that you have installed the main python packages (`numpy`, `matplotlib`, `jupyter`, `jupyterlab`, `cpymad` and `pandas`) needed for the workshop. In order to do that you can use the `pip` package management system. Note that you may need to install it using the following command:
 
 ```
 conda install pip
@@ -95,18 +95,29 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 
 4. Now you can start playing with Python!  
 
-Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)) to familiarize with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
+Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py)) to familiarise with the typical Python concepts that will be used during the course, but also to verify your installation. If you happen to experience any problem, please check to have installed the whole anaconda distribution. Alternatively, you can try to go back to your terminal, and install each single (or missing) package independently, e.g.:
 
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
+If your installation problems persist you can check if they are compiled in the list of [appendix A](#appendix-a-installation-pitfalls) (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
 ---
-## Appendix: Python Packages
+## Appendix A: Installation pitfalls
 
-You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `call`, `table.twiss.dframe`, `table.summ.dframe` and `table.track.dframe` methods, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py))).
+In the following appendix we collect some problems that you can experience depending on your platform and installation set-up. 
+
+1) On some installations, when instanciating the madx object from cpymad one has to set ```myMad = Madx(stdout=False)```, otherwise cpymad doesn’t work.
+
+2) On some windows installations where the user has set the comma “,” as decimal separator, cpymad seems to badly interpret values like “3.14” (i.e. with a “,”) as string instead of numbers. 
+
+3) Sometimes the MAD-X errors are visible in the jupyter notebook, sometimes indeed in the terminal behind. 
+
+## Appendix B: Python Packages
+
+You can leverage python's capability by exploring a galaxy of packages. Below you can find the most useful for our course (focus mostly on `numpy`, `matplotlib` and `pandas`). The cpymad library is the one used to link the Python environment with the MAD-X software (from all the methods included in this library during the MAD-X workshop we will focus only on the `call`,`input`, `table.twiss.dframe`, `table.summ.dframe` and `table.track.dframe` methods, you can find an example of how to use it [here](PythonBasicTutorial/PythonBasic.ipynb) (in order to run all the examples you need also to download [MyFirstExample.madx](PythonBasicTutorial/MyFirstExample.madx) and [TutorialLibraryOfFunctions.py](PythonBasicTutorial/TutorialLibraryOfFunctions.py))).
 
 ### The *numpy* package
 To get familiar with the *numpy* package have a look at the following [summary poster](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf).

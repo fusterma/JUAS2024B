@@ -2,24 +2,30 @@
 ! Definition of parameters
 ! *********************************************************************
 
-l_cell=100;
-quadrupoleLenght=5;
-f=200;
-myK:=1/f/quadrupoleLenght;// m^-2
+!Magnet properties
+quadrupoleLenght=0.1;
+cellLength=10;
+
+myK1=.1;// m^-2
+myK2=.1;// m^-2
+myK3=.1;// m^-2
+myK4=.1;// m^-2
 
 ! *********************************************************************
 ! Definition of magnets
 ! ********************************************************************* 
-QF: quadrupole, L=quadrupoleLenght, K1:=myK;
-QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
+
+Q: quadrupole, L=quadrupoleLenght;
 
 ! *********************************************************************
 ! Definition of sequence
 ! *********************************************************************
-myCell:sequence, refer=entry, L=L_CELL;
-quadrupole1: QF, at=0;
-marker1: marker, at=25;
-quadrupole2: QD, at=50;
-marker2: marker, at=75;
-endsequence;
 
+myCell:sequence, refer=center, L=cellLength;
+myStart: marker, at=0;
+q1: Q,K1:=myK1, at=2;
+q2: Q,K1:=myK2, at=4;
+q3: Q,K1:=myK3, at=6;
+q4: Q,K1:=myK4, at=8;
+myEnd: marker, at=10;
+endsequence;

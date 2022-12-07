@@ -2,24 +2,33 @@
 ! Definition of parameters
 ! *********************************************************************
 
-l_cell=100;
-quadrupoleLenght=5;
-f=200;
-myK:=1/f/quadrupoleLenght;// m^-2
+quadrupoleLength=5;
+dipoleLength=15;
+cellLength=100;
+nBend=736;
+
+myKF=0.0056;
+myKD=-0.0056;
 
 ! *********************************************************************
 ! Definition of magnets
 ! ********************************************************************* 
-QF: quadrupole, L=quadrupoleLenght, K1:=myK;
-QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
+
+QF: quadrupole, L=quadrupoleLength, K1:=myKF;
+QD: quadrupole, L=quadrupoleLength, K1:=myKD;
+BM: sbend, L=dipoleLength, angle=2*pi/nBend; 
 
 ! *********************************************************************
 ! Definition of sequence
 ! *********************************************************************
-myCell:sequence, refer=entry, L=L_CELL;
-quadrupole1: QF, at=0;
-marker1: marker, at=25;
-quadrupole2: QD, at=50;
-marker2: marker, at=75;
+
+myCell:sequence, refer=CENTER, L=cellLength; ! already changed to centre
+q1: QF, at=2.5;
+B1: BM, at =17.5;
+B2: BM, at =37.5;
+q2: QD, at=52.5;
+B3: BM, at =67.5;
+B4: BM, at =87.5;
 endsequence;
+
 
