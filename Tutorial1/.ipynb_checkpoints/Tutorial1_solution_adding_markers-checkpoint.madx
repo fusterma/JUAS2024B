@@ -1,0 +1,57 @@
+! *********************************************************************
+! Definition of parameters
+! *********************************************************************
+
+option, echo=false, info=false, warn=false;
+l_cell=100;
+quadrupoleLenght=5;
+f=200;
+myK:=1/f/quadrupoleLenght;// m^-2
+
+! *********************************************************************
+! Definition of magnet
+! ********************************************************************* 
+QF: quadrupole, L=quadrupoleLenght, K1:=myK;
+QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
+
+
+installMarkers(nn): macro ={
+markernn: marker, at=nn;
+};
+
+N=6;
+
+! *********************************************************************
+! Definition of sequence
+! *********************************************************************
+myCell:sequence, REFER=centre, L=L_CELL;
+quadrupole1: QF, at=2.5;
+while (N<50) {
+exec, installMarkers($N);
+N=N+1;
+!value N;
+}
+quadrupole2: QD, at=52.5;
+N=56;
+while (N<100) {
+exec, installMarkers($N);
+N=N+1;
+}
+endsequence;
+
+! *********************************************************************
+! Definition of beam
+! *********************************************************************
+beam, particle=proton, energy=2;
+
+! *********************************************************************
+! Use of the sequence
+! *********************************************************************
+use, sequence=myCell;
+
+! *********************************************************************
+! TWISS
+! *********************************************************************
+select, flag=twiss, clear;
+select, flag=twiss, column=name, keyword, L, s, betx, alfx, mux, bety, alfy, muy, x, px, y, py, dx, dy, dx, dpx, dy, dpy;
+twiss, file=WithMarkers.txt;
