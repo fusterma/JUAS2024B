@@ -88,7 +88,7 @@ Once the installation of **Anaconda** is finalised or within your existing Pytho
 3. Follow the instructions given in the terminal. You should end-up on your default browser with a page similar to the following (in the case of the JupyterLab):
 
 <p align="center">
-<img src="JupyterLab.png" width="80%"/></a>
+<img src="./Figures/JupyterLab.png" width="80%"/></a>
 </p>
 
     On the left hand side of the widows you should see all files under the folder in your operating system where you executed the `jupyter lab` command. This will be your **working directory**. This interface allows you to move quickly through different opened files. 
