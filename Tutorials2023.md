@@ -10,10 +10,10 @@
 1.    Define the lattice MAD-X input file (.madx) for a FODO cell with the following characteristics:
 
       - Length of the cell, Lcell = 100 m.
-      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long ( $L_q$ ).
+      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long ( ```math L_q```).
       - Put the start of the first quadrupole at the start of the sequence.
       - Each quadrupole has a focal length f = 200 m. (HINT: $K1 \times L_q= 1/f$). 
-    
+
 <p align="center">
 <img src="Figures/Tutorial1_FODO.png" width="50%"/>
 </p>
