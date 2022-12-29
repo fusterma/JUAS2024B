@@ -138,7 +138,7 @@ Figure 6: Chromaticity correction scheme.
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 </p>
 
-2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= $10^{-2}$. Compare the results obtained in the Tutorial 4.
+2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= 10^(-2). Compare the results obtained in the Tutorial 4.
 
 3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= 10^(-2). Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
 
