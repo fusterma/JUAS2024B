@@ -67,7 +67,7 @@ Figure 3: FODO thin lens approximation beta-function as a function of quadrupole
 1.    Consider now the FODO cell of Tutorial 2 and add 4 sector dipoles of 15 m long (assume 5 m of drift space between magnets). Consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<img src="Figures/Ttorial3_FODO.png" width="40%"/>
+<img src="Figures/Tutorial3_FODO.png" width="40%"/>
 </p>
 
 <p align="center">
