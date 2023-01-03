@@ -104,6 +104,15 @@ If your installation problems persist you can check if they are compiled in the 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
+# SWAN CERN service
+
+Alternatively, if you have a CERN computing account you can work within the SWAN service where the required python environment and packages are available. 
+
+In order to do that:
+- First log-in with your credentials in [SWAN](https://swan.cern.ch).
+- Create a new project.
+- Upload the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master). 
+
 ---
 ## Appendix A: Installation pitfalls
 

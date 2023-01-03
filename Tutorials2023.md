@@ -10,9 +10,9 @@
 1.    Define the lattice MAD-X input file (.madx) for a FODO cell with the following characteristics:
 
       - Length of the cell, Lcell = 100 m.
-      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (<img src="https://render.githubusercontent.com/render/math?math=L_q").
+      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq).
       - Put the start of the first quadrupole at the start of the sequence.
-      - Each quadrupole has a focal length f = 200 m. (HINT: $K1 \times L_q= 1/f$). 
+      - Each quadrupole has a focal length f = 200 m. (HINT: K1 x Lq= 1/f). 
 
 <p align="center">
 <img src="Figures/Tutorial1_FODO.png" width="50%"/>
@@ -22,18 +22,18 @@
 Figure 1: Scheme of a FODO cell lattice.
 </p>   
 
-2. Define a proton beam with $E_{tot}$ = 2 GeV. Activate the sequence, try to find the periodic solution with the TWISS MAD-X function and plot the beta-functions. If you found $\beta_{max}$ = 460 m you succeeded!
+2. Define a proton beam with Etot = 2 GeV. Activate the sequence, try to find the periodic solution with the TWISS MAD-X function and plot the beta-functions. If you found the maximum beta to be 460 m you succeeded!
 
 3. Using the plot you obtained, can you estimate the phase advance of the cell? Compare the estimated phase advance with the tunes obtained with the TWISS MAD-X method.
     
-4. Try with $E_{tot}$ = 0.7 GeV: what is the MAD-X error message? Try with f = 20 m: what is the MAD-X error message? (Note that the error messages will appear in the terminal from which you launched the JupyterLab).
+4. Try with Etot = 0.7 GeV: what is the MAD-X error message? Try with f = 20 m: what is the MAD-X error message? (Note that the error messages will appear in the terminal from which you launched the JupyterLab).
 
 ## Tutorial 2: My first matching.
 
 #### Objectives:
    -  Match the FODO cell of Tutorial 1 using the thin lens approximation.
    -  Thick and thin lens approximation optics comparison.
-   -  Tune and $\beta$-function dependence on K1.
+   -  Tune and beta-function dependence on K1.
 
 Considering the periodic solution of the equation of motion of a FODO cell and imposing the thin lens approximation and the stability condition one can get the following dependences of the optics functions and the magnets properties:
 
@@ -50,13 +50,13 @@ Figure 2: FODO thin lens approximation phase advance as a function of quadrupole
 Figure 3: FODO thin lens approximation beta-function as a function of quadrupole properties.
 </p>
 
-1. Try to TWISS the FODO cell defined in Tutorial 1 powering the quadrupoles to obtain a $\Delta\mu$ ~ 90° in the cell using the thin lens approximation (Figure 1). 
+1. Try to TWISS the FODO cell defined in Tutorial 1 powering the quadrupoles to obtain a phase advance of ~ 90° in the cell using the thin lens approximation (Figure 1). 
 
-2. What is the $\beta_{max}$ compared to the thin lens approximation solution from Figure 2?
+2. What is the maximum beta-function value compared to the thin lens approximation solution from Figure 2?
 
-3. Halve the focusing strength of the quadrupole, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\Delta\mu$? Compare with the thin lens approximation from Figure 1 and Figure 2.
+3. Halve the focusing strength of the quadrupole, what is the effect of it on the maximum and minimum beta-functions and on the phase advance? Compare with the thin lens approximation from Figure 1 and Figure 2.
 
-4. Compute the maximum beam size σ assuming a normalized emittance of 3 mrad mm and $E_{tot}$ = 7 TeV.
+4. Compute the maximum beam size σ assuming a normalized emittance of 3 mrad mm and Etot = 7 TeV.
 
 ## Tutorial 3: Building a circular machine.
 
@@ -67,14 +67,14 @@ Figure 3: FODO thin lens approximation beta-function as a function of quadrupole
 1.    Consider now the FODO cell of Tutorial 2 and add 4 sector dipoles of 15 m long (assume 5 m of drift space between magnets). Consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<img src="Figures/Ttorial3_FODO.png" width="40%"/>
+<img src="Figures/Tutorial3_FODO.png" width="40%"/>
 </p>
 
 <p align="center">
 Figure 4: Scheme of a FODO cell with dipoles.
 </p>
 
-2. Do the dipoles (weak focusing) affect the $\beta_{max}$ and the dispersion? Compute the relative variation with and without dipoles on the $β_{max}$ on the two planes.
+2. Do the dipoles (weak focusing) affect the maximum of the beta-functions and the dispersion? Compute the relative variation with and without dipoles on the maximum beta-function on the two planes.
 
 3. From the phase advance of the FODO cell compute the horizontal and vertical tunes of the machine.
 
@@ -102,7 +102,7 @@ Figure 5: Chromaticity effect illustration.
 
 1. Using the lattice and the MAD-X input file from Tutorial 3 match the tunes of the FODO cell to 0.25, both horizontal and vertical.
 
-2. Using the chromaticity obtained from the TWISS, compute the tunes for particles with ∆p/p= $10^{-3}$.
+2. Using the chromaticity obtained from the TWISS, compute the tunes for particles with ∆p/p= 10^(-3).
 
 3. Track particles with initial coordinates x, y, px, py = (1, 1, 0, 0) mm in 100 turns. Plot the x-px phase space. How does the particle move in the phase space turn after turn?
 
@@ -112,7 +112,7 @@ Figure 5: Chromaticity effect illustration.
 
 **BONUS:**
 
-5. Repeat the tracking of points 3 and 4 but adding DELTAP = $10^{-2}$ to the TRACK command. How does the phase space look now? Is the tune still the same? It may help to look only at the first 4 turns to get a clear picture.
+5. Repeat the tracking of points 3 and 4 but adding DELTAP = 10^(-2) to the TRACK command. How does the phase space look now? Is the tune still the same? It may help to look only at the first 4 turns to get a clear picture.
 
 ## Tutorial 5: Chromaticity correction and non-linearities.
 
@@ -138,9 +138,9 @@ Figure 6: Chromaticity correction scheme.
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 </p>
 
-2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= $10^{-2}$. Compare the results obtained in the Tutorial 4.
+2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= 10^(-2). Compare the results obtained in the Tutorial 4.
 
-3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= $10^{-2}$. Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
+3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= 10^(-2). Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
 
 4. Track now a particle with initial coordinates x, y, px, py = (100, 100, 0, 0) mm in 100 cells. How does the particle move cell after cell? Do you see the tunes? What is going on?
 
@@ -154,7 +154,7 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
    - Build a transfer line and compute the optics for some initial conditions.
    - Matching a transfer line.
 
-1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 4 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m $^{-2}$, respectively. Can you find a periodic solution?
+1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 4 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Can you find a periodic solution?
 
 <p align="center">
 <img src="Figures/Tutorial6_TransferLine.png" width="50%"/>
@@ -164,12 +164,12 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 Figure 6: Transfer line scheme.
 </p>
 
-2. Can you find an initial conditions (IC) solution starting from ( $\beta_x$ , $\alpha_x$ , $\beta_y$ , $\alpha_y$) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end ( $\beta_x^{end}$ , $\alpha_x^{end}$ , $\beta_y^{end}$ , $\alpha_y^{end}$ )?
+2. Can you find an initial conditions (IC) solution starting from (beta_x , alpha_x , beta_y , alpha_y) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end)?
 
-3. Starting from ( $\beta_x$ , $\alpha_x$ , $\beta_y$ , $\alpha_y$ ) = (1, 0, 2, 0) m match the line to ( $\beta_x^{end}$, $α_x^{end}$, $\beta_y^{end}$, $αy^{end}$) = (2, 0, 1, 0) m at the end.
+3. Starting from (beta_x , alpha_x , beta_y , alpha_y) = (1, 0, 2, 0) m match the line to (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end) = (2, 0, 1, 0) m at the end.
 
-4. Starting from ( $\beta_x$ , $\alpha_x$ , $\beta_y$ , $\alpha_y$ ) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the ( $\beta_x^{end}$ , $\alpha_x^{end}$ , $\beta_y^{end}$ , $\alpha_y^{end}$ ) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m $^{-2}$, respectively. Compute the required gradients for this solution.
+4. Starting from (beta_x , alpha_x , beta_y , alpha_y) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Compute the required gradients for this solution.
 
 **BONUS:**
 
-5. Consider that the quadrupoles have an excitation current of a 100 A m $^2$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
+5. Consider that the quadrupoles have an excitation current of a 100 A m^2 and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
