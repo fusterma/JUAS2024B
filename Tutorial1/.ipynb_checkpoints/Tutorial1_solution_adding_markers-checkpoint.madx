@@ -11,19 +11,25 @@ myK:=1/f/quadrupoleLenght;// m^-2
 ! *********************************************************************
 ! Definition of magnet
 ! ********************************************************************* 
+
 QF: quadrupole, L=quadrupoleLenght, K1:=myK;
 QD: quadrupole, L=quadrupoleLenght, K1:=-myK;
 
+
+! *********************************************************************
+! Macro definition to install markers in the drifts
+! *********************************************************************
 
 installMarkers(nn): macro ={
 markernn: marker, at=nn;
 };
 
-N=6;
+N=6; ! We define the first marker 1 m after the exit of the quadrupoles
 
 ! *********************************************************************
 ! Definition of sequence
 ! *********************************************************************
+
 myCell:sequence, REFER=centre, L=L_CELL;
 quadrupole1: QF, at=2.5;
 while (N<50) {
@@ -42,16 +48,19 @@ endsequence;
 ! *********************************************************************
 ! Definition of beam
 ! *********************************************************************
+
 beam, particle=proton, energy=2;
 
 ! *********************************************************************
 ! Use of the sequence
 ! *********************************************************************
+
 use, sequence=myCell;
 
 ! *********************************************************************
 ! TWISS
 ! *********************************************************************
+
 select, flag=twiss, clear;
 select, flag=twiss, column=name, keyword, L, s, betx, alfx, mux, bety, alfy, muy, x, px, y, py, dx, dy, dx, dpx, dy, dpy;
 twiss, file=WithMarkers.txt;
