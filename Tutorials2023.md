@@ -31,7 +31,7 @@ Figure 1: Scheme of a FODO cell lattice.
 ## Tutorial 2: My first matching.
 
 #### Objectives:
-   -  Match the FODO cell of Tutorial 1 using the thin lens approximation.
+   -  Match the FODO cell of Tutorial 2 using the thin lens approximation.
    -  Thick and thin lens approximation optics comparison.
    -  Tune and beta-function dependence on K1.
 
@@ -82,9 +82,9 @@ Figure 4: Scheme of a FODO cell with dipoles.
 
 **BONUS:**
 
-5.    Change the total beam energy to 7 TeV. What is the new tune of the machine? Why?
+B1. Change the total beam energy to 7 TeV. What is the new tune of the machine? Why?
 
-6.    What is the maximum tune that you can reach with such a lattice? (HINT: what is the maximum phase advance per FODO cell in the thin lens approximation?).
+B2. What is the maximum tune that you can reach with such a lattice? (HINT: what is the maximum phase advance per FODO cell in the thin lens approximation?).
 
 
 ## Tutorial 4: Natural chromaticity.
@@ -112,7 +112,7 @@ Figure 5: Chromaticity effect illustration.
 
 **BONUS:**
 
-5. Repeat the tracking of points 3 and 4 but adding DELTAP = 10^(-2) to the TRACK command. How does the phase space look now? Is the tune still the same? It may help to look only at the first 4 turns to get a clear picture.
+B1. Repeat the tracking of points 3 and 4 but adding DELTAP = 10^(-2) to the TRACK command. How does the phase space look now? Is the tune still the same? It may help to look only at the first 4 turns to get a clear picture.
 
 ## Tutorial 5: Chromaticity correction and non-linearities.
 
@@ -128,7 +128,7 @@ Figure 5: Chromaticity effect illustration.
 Figure 6: Chromaticity correction scheme.
 </p>
 
-1. Add 0.5 m long sextupoles attached to the quadrupoles. With a matching block adjust the vertical and horizontal chromaticity of the cell (global parameters: DQ1 and DQ2) to zero, by powering the two sextupoles (K21 and K22). 
+1. Add 0.5 m long sextupoles attached to the quadrupoles. With a matching block adjust the vertical and horizontal chromaticity of the cell (global parameters: DQ1 and DQ2) to zero, by powering the two sextupoles (K2_1 and K2_2). 
 
 <p align="center">
 <img src="Figures/Tutorial5_FODO.png" width="50%"/>
@@ -138,7 +138,7 @@ Figure 6: Chromaticity correction scheme.
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 </p>
 
-2. Using the K21 and K22 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= 10^(-2). Compare the results obtained in the Tutorial 4.
+2. Using the K2_1 and K2_2 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= 10^(-2). Compare the results obtained in the Tutorial 4.
 
 3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= 10^(-2). Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
 
@@ -146,7 +146,7 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 
 **BONUS:**
 
-5. Move the tunes to (0.23, 0.23) and repeat the questions 3 and 4. Is the particle now stable?
+B1. Move the tunes to (0.23, 0.23) and repeat the questions 3 and 4. Is the particle now stable?
 
 ## Tutorial 6: Building a transfer line.
 
@@ -172,4 +172,4 @@ Figure 6: Transfer line scheme.
 
 **BONUS:**
 
-5. Consider that the quadrupoles have an excitation current of a 100 A m^2 and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
+B1. Consider that the quadrupoles have an excitation current of a 100 A m^2 and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
