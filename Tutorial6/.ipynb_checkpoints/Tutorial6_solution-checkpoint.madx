@@ -2,6 +2,7 @@
 ! Definition of parameters
 ! *********************************************************************
 
+!Magnet properties
 quadrupoleLenght=0.1;
 cellLength=10;
 
