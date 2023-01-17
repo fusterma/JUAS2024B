@@ -154,7 +154,7 @@ B1. Move the tunes to (0.23, 0.23) and repeat the questions 3 and 4. Is the part
    - Build a transfer line and compute the optics for some initial conditions.
    - Matching a transfer line.
 
-1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 4 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Can you find a periodic solution?
+1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 0.4 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Can you find a periodic solution?
 
 <p align="center">
 <img src="Figures/Tutorial6_TransferLine.png" width="50%"/>
