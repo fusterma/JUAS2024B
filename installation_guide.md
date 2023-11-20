@@ -1,4 +1,4 @@
-# INSTALLATION AND TEST GUIDE FOR THE MAD-X WORKSHOP AT JUAS 2023
+# INSTALLATION AND TEST GUIDE FOR THE MAD-X WORKSHOP AT JUAS 2024
 **Material based on CAS 2022 from D. Gamba, G. Sterbini and S. Albright** 
 
 During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)** environment and, mostly, the [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), [cpymad](http://hibtc.github.io/cpymad/index.html) and [pandas](https://pandas.pydata.org/) packages. We will explain in the following sections how to install all necessary software on **your laptop**.
@@ -8,7 +8,7 @@ A basic knowledge of Python is assumed. If you are not familiar with Python, you
 After [a short introduction](#a-very-short-introduction-to-python), where we provided some useful links to get familiar with Python, we will focus on the [software setup](#software-setup). 
 Finally, in [appendix B](#appendix-B-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
 
-> **Important:** we kindly ask you to go throw this document **before coming** to JUAS, such as to **prepare yourself** (and **your laptop**) for the course. 
+> **Important:** we kindly ask you to go throw this document **before coming** to JUAS, to **prepare yourself** (and **your laptop**) for the course. 
 
 ---
 # A very short introduction to Python
@@ -23,12 +23,12 @@ You can also follow the tutorials [here](https://www.kaggle.com/code/colinmorris
 
 ### Test Python on a web page
 
-If you are not familiar with Python and you have not it installed on your laptop, you can start playing with simple python snippets on the web (e.g., [CoLab](https://colab.research.google.com/drive/1Pk-UPE2-OCA2UCFIunqDwxXmQi9Yvp-C?usp=sharing), a google account is needed).
+If you are not familiar with Python, and you do not have it installed on your laptop, you can start playing with simple python snippets on the web (e.g., [CoLab](https://colab.research.google.com/drive/1Pk-UPE2-OCA2UCFIunqDwxXmQi9Yvp-C?usp=sharing), a google account is needed).
 
 ---
 # Software Setup
 
-In this section we will explain how to install Python and JupyterLab on your laptop.
+In this section, we will explain how to install Python and JupyterLab on your laptop.
 JupyterLab is a user-friendly environment to work with Python. 
 You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/en/stable/).
 
@@ -36,9 +36,9 @@ You can find an overview on JupyterLab [here](https://jupyterlab.readthedocs.io/
 
 ## Installation
 
-We suggest to install the **Anaconda** distribution from [here](https://www.anaconda.com/distribution/)
+We suggest to install the **Anaconda** distribution from [here](https://www.anaconda.com/download)
 
-> We suggest to install one of the latest distribution (**for example version Python 3.9**).
+> We suggest to install one of the latest distribution (**for example version Python 3.11**).
 
 The installation process clearly depends on your operating system. We suggest you to follow the official documentation for [Windows](https://docs.anaconda.com/anaconda/install/windows/), [Linux](https://docs.anaconda.com/anaconda/install/linux/), or [Mac](https://docs.anaconda.com/anaconda/install/mac-os/) as appropriate. After having installed **Anaconda** we invite you to [verify your installation](https://docs.anaconda.com/anaconda/install/verify-install/) - as suggested in the [installation documentation](https://docs.anaconda.com/anaconda/install/).
 
@@ -100,7 +100,7 @@ Please, make sure to go throw all [this Jupyter-notebook](PythonBasicTutorial/Py
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
-If your installation problems persist you can check if they are compiled in the list of [appendix A](#appendix-a-installation-pitfalls) (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, axel.poyet@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
+If your installation problems persist you can check if they are compiled in the list of [appendix A](#appendix-a-installation-pitfalls) (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
 Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
 
