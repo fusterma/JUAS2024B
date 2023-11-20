@@ -102,7 +102,7 @@ pip install numpy matplotlib jupyter jupyterlab cpymad pandas
 ```
 If your installation problems persist you can check if they are compiled in the list of [appendix A](#appendix-a-installation-pitfalls) (Installation pitfalls) or you can contact us (nuria.fuster@ific.uv.es, guido.sterbini@cern.ch, davide.gamba@cern.ch), we will be happy to help you! 
 
-Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master) in your **working directory**.
+Finally, **just before the start of the course**, we will ask you to download the **latest version** of the [MAD-X Workshop JUAS2024 repository](https://github.com/fusterma/JUAS2024/zipball/master) in your **working directory**.
 
 # SWAN CERN service
 
@@ -111,7 +111,7 @@ Alternatively, if you have a CERN computing account you can work within the SWAN
 In order to do that:
 - First log-in with your credentials in [SWAN](https://swan.cern.ch).
 - Create a new project.
-- Upload the **latest version** of the [MAD-X Workshop JUAS2023 repository](https://github.com/fusterma/JUAS2023/zipball/master). 
+- Upload the **latest version** of the [MAD-X Workshop JUAS2024 repository](https://github.com/fusterma/JUAS2024/zipball/master). 
 
 ---
 ## Appendix A: Installation pitfalls
