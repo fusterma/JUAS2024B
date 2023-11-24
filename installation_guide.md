@@ -6,7 +6,7 @@ During the course we will use **Python3** in a **[Jupyter](https://jupyter.org)*
 A basic knowledge of Python is assumed. If you are not familiar with Python, you can find a few resources to fill the gap in the following sections. Do not worry about the theory for the moment (it will be discussed in details during the school) but focus on the Python syntax and data types (tuples, lists,...).
 
 After [a short introduction](#a-very-short-introduction-to-python), where we provided some useful links to get familiar with Python, we will focus on the [software setup](#software-setup). 
-Finally, in [appendix B](#appendix-B-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
+Finally, in [appendix B](#appendix-B:-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
 
 > **Important:** we kindly ask you to go throw this document **before coming** to JUAS, to **prepare yourself** (and **your laptop**) for the course. 
 
