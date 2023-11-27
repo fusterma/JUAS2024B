@@ -8,7 +8,7 @@ A basic knowledge of Python is assumed. If you are not familiar with Python, you
 After [a short introduction](#a-very-short-introduction-to-python), where we provided some useful links to get familiar with Python, we will focus on the [software setup](#software-setup). 
 Finally, in [appendix B](#appendix-B-python-packages) you will find links and cheatsheets for the most common Python packages that will be used during the course.
 
-> **Important:** we kindly ask you to go throw this document **before coming** to JUAS, to **prepare yourself** (and **your laptop**) for the course. 
+> **Important:** we kindly ask you to go throw this document **before coming** to JUAS, to **prepare yourself** (and **your laptop**) for the MAD-X workshop. 
 
 ---
 # A very short introduction to Python
@@ -48,13 +48,13 @@ Then, check that you have installed the main python packages (`numpy`, `matplotl
 conda install pip
 ``` 
 
-Then you can check for the installed packages by typing in the **terminal** (Mac and Linux) or in the **cmd window** or **Anaconda Prompt** (Windows) the following command:
+Then, you can check for the installed packages by typing in the **terminal** (Mac and Linux) or in the **cmd window** or **Anaconda Prompt** (Windows) the following command:
 
 ```
 pip list
 ```
 
-If you have some missing packages install them independently, e.g.:
+If you have some missing packages, install them independently, e.g.:
 
 ```python
 pip install numpy matplotlib jupyter jupyterlab cpymad pandas
@@ -116,9 +116,9 @@ In order to do that:
 ---
 ## Appendix A Installation pitfalls
 
-In the following appendix we collect some problems that you can experience depending on your platform and installation set-up. 
+In the following appendix, we collect some problems that you can experience depending on your platform and installation set-up. 
 
-1) On some installations, when instanciating the madx object from cpymad one has to set ```myMad = Madx(stdout=False)```, otherwise cpymad doesn’t work.
+1) On some installations, when instanciating the madx object from cpymad, one has to set ```myMad = Madx(stdout=False)```, otherwise cpymad doesn’t work.
 
 2) On some windows installations where the user has set the comma “,” as decimal separator, cpymad seems to badly interpret values like “3.14” (i.e. with a “,”) as string instead of numbers. 
 
