@@ -1,5 +1,5 @@
-# MAD-X WORKSHOP JUAS 2023
-**N. Fuster-Martínez, G. Sterbini, D. Gamba, A. Poyet** 
+# MAD-X WORKSHOP JUAS 2024
+**N. Fuster-Martínez, G. Sterbini, D. Gamba, S. Kostoglou, J. Olivares** 
 
 ## Tutorial 1: My first accelerator, a FODO cell.
 
