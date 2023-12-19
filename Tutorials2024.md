@@ -1,53 +1,46 @@
-# MAD-X WORKSHOP JUAS 2024
-**N. Fuster-Martínez, G. Sterbini, D. Gamba, S. Kostoglou, J. Olivares** 
+# MAD-X WORKSHOP JUAS 2023
+**N. Fuster-Martínez, G. Sterbini, D. Gamba, A. Poyet** 
 
-## Tutorial 1: My first accelerator, a FODO cell.
+## Tutorial 1: My first accelerator, a FODO cell
 
 #### Objectives:
-   - Define a simple lattice.
-   - Compute the optics using the TWISS MAD-X engine.
-    
-1.    Define the lattice MAD-X input file (.madx) for a FODO cell with the following characteristics:
+The main goal of this tutorial is to learn how to define a simple magnetic lattice and compute the linear optics functions using MAD-X. For that, we are going to define a FODO lattice, which is the simplest configuration we can design to get a net focusing effect of the beam in both transverse planes.
 
-      - Length of the cell, Lcell = 100 m.
-      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq).
-      - Put the start of the first quadrupole at the start of the sequence.
+####Questions:
+    
+1.    Define a FODO lattice with the following characteristics:
+
+      - Length of the cell, L_cell = 100 m,
+      - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq),
+      - Place the start of the first quadrupole at the start of the sequence,
       - Each quadrupole has a focal length f = 200 m. (HINT: K1 x Lq= 1/f). 
 
 <p align="center">
-<img src="Figures/Tutorial1_FODO.png" width="50%"/>
+<img src="Figures/FODO.png" width="50%"/>
 </p>
 
 <p align="center">
-Figure 1: Scheme of a FODO cell lattice.
+Figure 1: FODO cell scheme with main parameters depicted.
 </p>   
 
-2. Define a proton beam with Etot = 2 GeV. Activate the sequence, try to find the periodic solution with the TWISS MAD-X function and plot the beta-functions. If you found the maximum beta to be 460 m you succeeded!
+2. Define a proton beam with a total energy Etot = 2 GeV. Activate the sequence and compute the periodic linear optics functions with the twiss MAD-X command. Then, plot the beta-functions. If you found the maximum beta to be 460 m you succeeded!
 
-3. Using the plot you obtained, can you estimate the phase advance of the cell? Compare the estimated phase advance with the tunes obtained with the TWISS MAD-X method.
+3. Using the beta-functions plot obtained, can you estimate the phase advance of the cell? How does this value compare to the tune computed by MAD-X.
     
-4. Try with Etot = 0.7 GeV: what is the MAD-X error message? Try with f = 20 m: what is the MAD-X error message? (Note that the error messages will appear in the terminal from which you launched the JupyterLab).
+4. Try to run the twiss command with Etot = 0.7 GeV. What is the MAD-X error message? And if you change the focal length to 20 m? (Note that the error messages will appear in the terminal from which you launched the JupyterLab).
 
 ## Tutorial 2: My first matching.
 
 #### Objectives:
-   -  Match the FODO cell of Tutorial 2 using the thin lens approximation.
-   -  Thick and thin lens approximation optics comparison.
-   -  Tune and beta-function dependence on K1.
+The main goal of this tutorial is to study the behavior of the linear optics functions when we vary the FODO cell magnetic properties. For that, we will use the linear thin lens optics solution and the twiss MAD-X module. The results of the two approaches will be compared and discussed.
 
-Considering the periodic solution of the equation of motion of a FODO cell and imposing the thin lens approximation and the stability condition one can get the following dependences of the optics functions and the magnets properties:
+By considering the periodic solution of the equation of motion for a FODO cell, and applying the thin lens approximation and the stability condition, we can derive the following relationships between the optical parameters, the magnet properties and the cell length:
 
 <p align="center">
-<img src="Figures/Tutorial2_Figure1.png" width="40%"/>
+<img src="Figures/equations.png" width="40%"/>
 </p>
 <p align="center">
-Figure 2: FODO thin lens approximation phase advance as a function of quadrupole properties.
-</p>
-<p align="center">
-<img src="Figures/Tutorial2_Figure2.png" width="40%"/>
-</p>
-<p align="center">
-Figure 3: FODO thin lens approximation beta-function as a function of quadrupole properties.
+<img src="Figures/analytic.png" width="40%"/>
 </p>
 
 1. Try to TWISS the FODO cell defined in Tutorial 1 powering the quadrupoles to obtain a phase advance of ~ 90° in the cell using the thin lens approximation (Figure 1). 
