@@ -1,9 +1,9 @@
 # MAD-X WORKSHOP JUAS 2024
-**N. Fuster-Mart√≠nez, G. Sterbini, D. Gamba, S. Kostoglou, J. Olivares** 
+**N. Fuster-Marti≠nez, G. Sterbini, D. Gamba, S. Kostoglou, J. Olivares** 
 
 ## Tutorial 1: My first accelerator, a FODO cell
 
-####Objectives:
+##Objectives:
 
 The main goal of this tutorial is to learn how to define a simple magnetic lattice and compute the linear optics functions using MAD-X. For that, we are going to define a FODO lattice, which is the simplest configuration we can design to get a net focusing effect of the beam in both transverse planes.
 
@@ -17,7 +17,7 @@ Questions:
       - the quadrupole focal length f = 200 m. (HINT: K1 x $L_{q}$= 1/f). 
 
 <p align="center">
-<img src="Figures/FODO.png" width="50%"/>
+<img src="Figures/Tutorial1_FODO.png" width="50%"/>
 </p>
 <p align="center">
 Figure 1: FODO cell scheme with main parameters depicted.
@@ -31,7 +31,7 @@ Figure 1: FODO cell scheme with main parameters depicted.
 
 ## Tutorial 2: My first matching
 
-####Objectives:
+##Objectives:
 
 The main goal of this tutorial is to study the behavior of the linear optics functions when we vary the FODO cell magnetic properties. For that, we will use the linear thin lens optics solution and the twiss MAD-X module. The results of the two approaches will be compared and discussed.
 
@@ -64,12 +64,13 @@ $\sigma_{x,y}=\sqrt{\beta_{x,y}}$
 
 ## Tutorial 3: Building a circular machine
 
-#### Objectives:
+##Objectives:
 
-   - Build a circular machine by introducing dipoles into the FODO cell of Tutorial 1.
-   - Use the MATCHING MAD-X engine to compute the strength of the magnets to get a desired tune.
+The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune, defined as the phase advance normalized by 2$\pi$, is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
 
-1.    Consider now the FODO cell of Tutorial 2 and add 4 sector dipoles of 15 m long (assume 5 m of drift space between magnets). Consider a ring with 736 dipoles with equal bending angles.
+Questions:
+
+1.    Consider the FODO cell designed in Tutorial 1 and add 4 sector dipoles of 15 m long, $L_d$, assuming a drift space between the magnets as illustrated in Fig. 4.  For computing the required bending angle consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
 <img src="Figures/Tutorial3_FODO.png" width="40%"/>
@@ -79,24 +80,22 @@ $\sigma_{x,y}=\sqrt{\beta_{x,y}}$
 Figure 4: Scheme of a FODO cell with dipoles.
 </p>
 
-2. Do the dipoles (weak focusing) affect the maximum of the beta-functions and the dispersion? Compute the relative variation with and without dipoles on the maximum beta-function on the two planes.
+2. Using the twiss command compute the linear optics functions. Do the dipoles (weak focusing) affect the maximum of the $\beta$-functions? And the dispersion? 
 
 3. From the phase advance of the FODO cell compute the horizontal and vertical tunes of the machine.
 
-4. Suppose you want to set a tune of (60.2,67.2), use the MAD-X matching engine on a single FODO to get it.
+4. Using the match command on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
 
-**BONUS:**
+5. If we change the beam energy to a total beam energy of 7 TeV, which are the new tunes of the machine? Why?
 
-B1. Change the total beam energy to 7 TeV. What is the new tune of the machine? Why?
-
-B2. What is the maximum tune that you can reach with such a lattice? (HINT: what is the maximum phase advance per FODO cell in the thin lens approximation?).
+6. What is the maximum tune that you can reach with such a lattice? HINT: what is the maximum phase advance per FODO cell in the thin lens approximation?
 
 
-## Tutorial 4: Natural chromaticity.
+## Tutorial 4: Natural chromaticity
 
-#### Objectives:
-   - Quantify the natural chromaticity of a FODO cell (from Tutorial 3).
-   - First tracking of particles using the tracking MAD-X engine to study the beam dynamics for different initial conditions.
+## Objectives:
+
+The main objectives of this tutorial is to study the impact of natural chromaticity of a FODO cell on the particles's beam dynamics by means of particle tracking studies. Fig. 5 illustrated the chromaticity concept in a quadrupole magnet. Orange and blue lines correspond to off-momentum particles and the green line represents the on-momentum particle. In this illustration, we observe a spread in the focusing effect of the quadrupole, which is caused by the energy spread of the beam, known as chromaticity.
 
 <p align="center">
 <img src="Figures/Tutorial4_chroma.jpg" width="50%"/>
