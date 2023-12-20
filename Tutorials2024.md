@@ -40,7 +40,7 @@ By considering the periodic solution of the equation of motion for a FODO cell, 
 Figure 2: Equations relating linear optics parameters and magnet and cell characteristics.
 </p>  
 <p align="center">
-<img src="Figures/analytic.png" width="100%"/>
+<img src="Figures/analytic.png" width="90%"/>
 </p>
 <p align="center">
 Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of magnet and cell characteristics.
@@ -133,23 +133,20 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 
 2. Using the strength of the sextupoles, $K2_{1}$ and $K2_{2}$ and the linear optics functions ($\beta$-function and dispersion) at the sextupole' location, evaluate the sextupole's contribution to the chromaticity on the horizontal plane using the following equation: 
 
+    $\phi=\{1}{4\pi}(\beta_{x,s1}k2_1d_{x,s1}+\beta_{x,s2}k2_2d_{x,s2})$.
+    
+Then, compare the obtained values to the chromaticity value obtained in Tutorial 4.
 
 
-3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and âˆ†p/p= 10^(-2). Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
+3. Track two particles, one with initial coordinates x, y, px, py = (1 mm, 1 mm, 0, 0) and another one with initial coordinates x, y, px, py = (100 mm, 100 mm, 0, 0) and both with $\Delta p/p = 0.01$ for 100 turns. Plot the horizontal and vertical phase space, x-px and y-py respectively. Did you manage to recover the original tune for the off-momentum particle? Do you see the tunes? What is going on?
 
-4. Track now a particle with initial coordinates x, y, px, py = (100, 100, 0, 0) mm in 100 cells. How does the particle move cell after cell? Do you see the tunes? What is going on?
+4. Move the tunes to (0.23, 0.23) and repeat the tracking exercice. Are the particles stable?
 
-**BONUS:**
+## Tutorial 6: Building a transfer line
 
-B1. Move the tunes to (0.23, 0.23) and repeat the questions 3 and 4. Is the particle now stable?
+ The main objective of this tutorial is to design a transfer line and setting the linear optics functions at the end of the line to some desired values. Matching studies for different initial conditions will be performed and the results discussed.
 
-## Tutorial 6: Building a transfer line.
-
-#### Objectives:
-   - Build a transfer line and compute the optics for some initial conditions.
-   - Matching a transfer line.
-
-1.    Build a transfer line for a 2 GeV proton beam of 10 m length with 4 quadrupoles of 0.1 m long (centered at 2, 4, 6, and 8 m). With K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Can you find a periodic solution?
+1. Build a transfer line for a 2 GeV proton beam of 10 m total length, $L_{tot}$, with 4 quadrupoles of 0.1 m long, $L_q$, and 0.1 m$^{-2}$. Place the quadrupoles centered at 2, 4, 6, and 8 m. What is the error message that you get if you try to find a periodic solution? Why? 
 
 <p align="center">
 <img src="Figures/Tutorial6_TransferLine.png" width="50%"/>
@@ -159,12 +156,10 @@ B1. Move the tunes to (0.23, 0.23) and repeat the questions 3 and 4. Is the part
 Figure 6: Transfer line scheme.
 </p>
 
-2. Can you find an initial conditions (IC) solution starting from (beta_x , alpha_x , beta_y , alpha_y) = (1, 0, 2, 0) m? Compute the corresponding quadrupole gradients. What are the final optical conditions at the end (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end)?
+2. Calculate the linear optics functions for the transfer line assuming ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) at the start of it. What are the values of the linear optics functions at the end of the transfer line ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$)?
 
-3. Starting from (beta_x , alpha_x , beta_y , alpha_y) = (1, 0, 2, 0) m match the line to (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end) = (2, 0, 1, 0) m at the end.
+3. Starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) match the line to get at the end the following optics ($\beta_{x, end2}$ , $\alpha_{x, end2}$ , $\beta_{y, end2}$ , $\alpha_{y, end2}$) = (2 m, 0, 1 m, 0).
 
-4. Starting from (beta_x , alpha_x , beta_y , alpha_y) = (1 , 0, 2, 0) m and the gradients obtained in the previous matching, match to the (beta_x_end , alpha_x_end , beta_y_end , alpha_y_end) found in the question number 2. Can you find back the K1 values of 0.1, 0.1, 0.1, 0.1 m^(-2), respectively. Compute the required gradients for this solution.
+4. Now, starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) and the quadrupoles' strength computed in question 3, match to the ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$) found in the question number 2. Can you find back the initial quadrupoles' strength from question 1 of 0.1 m$^{-2}$?
 
-**BONUS:**
-
-B1. Consider that the quadrupoles have an excitation current of a 100 A m^2 and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions of the exercise. (HINT: assume a linear regime and use a dimensional approach).
+5. Consider that the quadrupoles have an excitation current of a 100 A·$m^2$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions obtained in question 2 and 4 assuming a linear regime and use a dimensional approach.
