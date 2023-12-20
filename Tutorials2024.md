@@ -14,7 +14,7 @@ Questions:
       - the length of the cell, $L_{cell}$ = 100 m,
       - two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long ($L_{q}$),
       - the start of the sequence placed at the start of the first quadrupole,
-      - the quadrupole focal length f = 200 m. (HINT: K1 x $L_{q}$= 1/f). 
+      - the quadrupole focal length f = 200 m. HINT: K1 x $L_{q}$= 1/f. 
 
 <p align="center">
 <img src="Figures/Tutorial1_FODO.png" width="50%"/>
@@ -23,11 +23,11 @@ Questions:
 Figure 1: FODO cell scheme with main parameters depicted.
 </p>   
 
-2. Define a proton beam with a total energy $E_{tot}$ = 2 GeV. Activate the sequence and compute the periodic linear optics functions with the twiss MAD-X command. Then, plot the $\beta$-functions. If you found the maximum of the $\beta$-function of 460 m you succeeded!
+2. Define a proton beam with a total energy $E_{tot}$ = 2 GeV. Activate the sequence and compute the periodic linear optics functions with the twiss MAD-X command. Then, plot the $\beta$-functions. If you found a maximum $\beta$-function of 460 m you succeeded!
 
 3. Using the $\beta$-function plot obtained, can you estimate the phase advance of the cell? How does this value compare to the tune computed by MAD-X.
     
-4. Try to run the twiss command with $E_{tot}$ = 0.7 GeV. What is the MAD-X error message? And if you change the focal length to 20 m? (Note that the error messages will appear in the terminal from which you launched the JupyterLab).
+4. Try to run the twiss command with $E_{tot}$ = 0.7 GeV. What is the MAD-X error message? And if you change the focal length to 20 m? Note that the error messages will appear in the terminal from which you launched the JupyterLab.
 
 ## Tutorial 2: My first matching
 
@@ -38,13 +38,13 @@ The main goal of this tutorial is to study the behavior of the linear optics fun
 By considering the periodic solution of the equation of motion for a FODO cell, and applying the thin lens approximation and the stability condition, we can derive the following relationships between the optical parameters, the magnet properties and the cell length:
 
 <p align="center">
-<img src="Figures/equations.png" width="50%"/>
+<img src="Figures/equations.png" width="70%"/>
 </p>
 <p align="center">
 Figure 2: Equations relating linear optics parameters and magnet and cell characteristics.
 </p>  
 <p align="center">
-<img src="Figures/analytic.png" width="80%"/>
+<img src="Figures/analytic.png" width="100%"/>
 </p>
 <p align="center">
 Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of magnet and cell characteristics.
@@ -104,26 +104,23 @@ The main objectives of this tutorial is to study the impact of natural chromatic
 Figure 5: Chromaticity effect illustration.
 </p>
 
-1. Using the lattice and the MAD-X input file from Tutorial 3 match the tunes of the FODO cell to 0.25, both horizontal and vertical.
+In order to do this tutorial, we will use as starting point, the thin lens version of the lattice designed in Tutorial 3 and we will consider a 7 TeV total energy proton beam. For this tutorial de use of a thin lens is mandatory in order to use the track module. The makethin command should be used for this purpose. Additionally, after running the makethin command, it will be necessary to perform a rematch of the lattice to ensure that the horizontal and vertical tunes of the FODO cell remain at 0.25.
 
-2. Using the chromaticity obtained from the TWISS, compute the tunes for particles with ∆p/p= 10^(-3).
+Questions:
 
-3. Track particles with initial coordinates x, y, px, py = (1, 1, 0, 0) mm in 100 turns. Plot the x-px phase space. How does the particle move in the phase space turn after turn?
+1. Using the chromaticity computed using the twiss command, compute the tunes for particles with $\delta p/p = 10^{-3}$ using the following equation:
 
-     (HINT: To use the TRACK MAD-X module you need to convert your lattice into thin and for that you need to have your SEQUENCE referred to the center of the elements).
+$\Delta Q = dq \times \frac{\delta p}{p}$
 
-4. Track a particle now with x, y, px, py = (100, 100, 0, 0) mm in 100 turns. Plot x-px phase-space. Does something change with respect to the previous case? Why?
+2. Track two particles, one with initial coordinates x, y, px, py = (1 mm, 1 mm, 0, 0) and another one with initial coordinates x, y, px, py = (100 mm, 100 mm, 0, 0) in 100 turns. Plot the horizontal and vertical phase space, x-px and y-py respectively. How do the particles move in the phase space turn after turn? Do you see the tunes? Do you see any difference between the two particles? It may help to look only at the first 4 turns to get a clear picture.
 
-**BONUS:**
+3. Repeat the tracking exercise but now for two of-momentum particles by adding a $\delta p/p = 10^{-2}$ to the initial particles' conditions. How does the phase space look now? Is the tune still the same?
 
-B1. Repeat the tracking of points 3 and 4 but adding DELTAP = 10^(-2) to the TRACK command. How does the phase space look now? Is the tune still the same? It may help to look only at the first 4 turns to get a clear picture.
+## Tutorial 5: Chromaticity correction and non-linearities
 
-## Tutorial 5: Chromaticity correction and non-linearities.
-
-#### Objectives:
-   - Introduce sextupoles in the FODO cell for chromaticity correction.
-   - Non-linearities impact on the beam dynamics.
-
+## Objectives:
+  
+The main objective of this tutorial is to install sextupoles in the FODO cell used in Tutorial 3 to correct the natural chromaticity and study the impact of the sextupoles on the particles's beam dynamics.
 
 <p align="center">
 <img src="Figures/Tutorial5_chroma_correction.jpg" width="50%"/>
@@ -132,7 +129,9 @@ B1. Repeat the tracking of points 3 and 4 but adding DELTAP = 10^(-2) to the TRA
 Figure 6: Chromaticity correction scheme.
 </p>
 
-1. Add 0.5 m long sextupoles attached to the quadrupoles. With a matching block adjust the vertical and horizontal chromaticity of the cell (global parameters: DQ1 and DQ2) to zero, by powering the two sextupoles (K2_1 and K2_2). 
+Questions:
+
+1.  Install two 0.5 m long sextupoles attached to the two quadrupoles. With a MAD-X matching block adjust the vertical and horizontal chromaticity of the cell (global parameters: DQ1 and DQ2) to zero, by powering the two sextupoles ($K2_{1}$ and $K2_{2}$). 
 
 <p align="center">
 <img src="Figures/Tutorial5_FODO.png" width="50%"/>
@@ -142,7 +141,9 @@ Figure 6: Chromaticity correction scheme.
 Figure 7: FODO cell with dipoles and sextupoles scheme.
 </p>
 
-2. Using the K2_1 and K2_2 obtained in point 1 and the β-functions and dispersion at the sextupole location, evaluate using the formula the sextupolar effect Q1 for a particle of  ∆p/p= 10^(-2). Compare the results obtained in the Tutorial 4.
+2. Using the strength of the sextupoles, $K2_{1}$ and $K2_{2}$ and the linear optics functions ($\beta$-function and dispersion) at the sextupole' location, evaluate the sextupole's contribution to the chromaticity on the horizontal plane using the following equation: 
+
+
 
 3. Track a particle with initial conditions x, y, px, py = (1, 1, 0, 0) mm in 100 cells and ∆p/p= 10^(-2). Plot the x-px phase-space. Did you manage to recover the original tune for the off-momentum particle?
 
