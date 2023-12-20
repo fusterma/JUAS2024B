@@ -1,16 +1,16 @@
-# MAD-X WORKSHOP JUAS 2023
-**N. Fuster-Martínez, G. Sterbini, D. Gamba, A. Poyet** 
+# MAD-X WORKSHOP JUAS 2024
+**N. Fuster-Martínez, G. Sterbini, D. Gamba, S. Kostoglou, J. Olivares** 
 
 ## Tutorial 1: My first accelerator, a FODO cell
 
-#### Objectives:
+####Objectives:
 The main goal of this tutorial is to learn how to define a simple magnetic lattice and compute the linear optics functions using MAD-X. For that, we are going to define a FODO lattice, which is the simplest configuration we can design to get a net focusing effect of the beam in both transverse planes.
 
-####Questions:
+######Questions:
     
 1.    Define a FODO lattice with the following characteristics:
 
-      - Length of the cell, L_cell = 100 m,
+      - Length of the cell, $L_{cell}$ = 100 m,
       - Two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long (Lq),
       - Place the start of the first quadrupole at the start of the sequence,
       - Each quadrupole has a focal length f = 200 m. (HINT: K1 x Lq= 1/f). 
