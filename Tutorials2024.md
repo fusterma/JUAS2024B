@@ -4,6 +4,7 @@
 ## Tutorial 1: My first accelerator, a FODO cell
 
 ####Objectives:
+
 The main goal of this tutorial is to learn how to define a simple magnetic lattice and compute the linear optics functions using MAD-X. For that, we are going to define a FODO lattice, which is the simplest configuration we can design to get a net focusing effect of the beam in both transverse planes.
 
 Questions:
@@ -13,7 +14,7 @@ Questions:
       - the length of the cell, $L_{cell}$ = 100 m,
       - two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long ($L_{q}$),
       - the start of the sequence placed at the start of the first quadrupole,
-      - the quadrupole focal length f = 200 m. (HINT: K1 x Lq= 1/f). 
+      - the quadrupole focal length f = 200 m. (HINT: K1 x $L_{q}$= 1/f). 
 
 <p align="center">
 <img src="Figures/FODO.png" width="50%"/>
@@ -30,7 +31,8 @@ Figure 1: FODO cell scheme with main parameters depicted.
 
 ## Tutorial 2: My first matching
 
-#### Objectives:
+####Objectives:
+
 The main goal of this tutorial is to study the behavior of the linear optics functions when we vary the FODO cell magnetic properties. For that, we will use the linear thin lens optics solution and the twiss MAD-X module. The results of the two approaches will be compared and discussed.
 
 By considering the periodic solution of the equation of motion for a FODO cell, and applying the thin lens approximation and the stability condition, we can derive the following relationships between the optical parameters, the magnet properties and the cell length:
@@ -39,22 +41,31 @@ By considering the periodic solution of the equation of motion for a FODO cell, 
 <img src="Figures/equations.png" width="50%"/>
 </p>
 <p align="center">
+Figure 2: Equations relating linear optics parameters and magnet and cell characteristics.
+</p>  
+<p align="center">
 <img src="Figures/analytic.png" width="80%"/>
 </p>
+<p align="center">
+Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of magnet and cell characteristics.
+</p>  
 
 Questions:
 
-1. Try to TWISS the FODO cell defined in Tutorial 1 powering the quadrupoles to obtain a phase advance of ~ 90° in the cell using the thin lens approximation (Figure 1). 
+1. Using the thin lens approximation solution form Fig. 3 (left) compute the required strength to power the quadrupoles to obtain a phase advance in the FODO cell of 90$^{\circ}$. Then, compute the linear optics functions using MAD-X. What is the phase advance computed by MAD-X.
 
-2. What is the maximum beta-function value compared to the thin lens approximation solution from Figure 2?
+2. What is the $\beta_{max}$ value computed by MAD-X? Compare the obtained value with the thin lens approximation solution from Fig. 3 (right).
 
-3. Halve the focusing strength of the quadrupole, what is the effect of it on the maximum and minimum beta-functions and on the phase advance? Compare with the thin lens approximation from Figure 1 and Figure 2.
+3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
 
-4. Compute the maximum beam size σ assuming a normalized emittance of 3 mrad mm and Etot = 7 TeV.
+4. Compute the maximum beam size, $\sigma_{x,y}$,� assuming a normalized horizontal and vertical emittance of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
 
-## Tutorial 3: Building a circular machine.
+$\sigma_{x,y}=\sqrt{\beta_{x,y}}$
+
+## Tutorial 3: Building a circular machine
 
 #### Objectives:
+
    - Build a circular machine by introducing dipoles into the FODO cell of Tutorial 1.
    - Use the MATCHING MAD-X engine to compute the strength of the magnets to get a desired tune.
 
