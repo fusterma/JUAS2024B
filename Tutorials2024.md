@@ -3,8 +3,6 @@
 
 ## Tutorial 1: My first accelerator, a FODO cell
 
-##Objectives:
-
 The main goal of this tutorial is to learn how to define a simple magnetic lattice and compute the linear optics functions using MAD-X. For that, we are going to define a FODO lattice, which is the simplest configuration we can design to get a net focusing effect of the beam in both transverse planes.
 
 Questions:
@@ -31,8 +29,6 @@ Figure 1: FODO cell scheme with main parameters depicted.
 
 ## Tutorial 2: My first matching
 
-##Objectives:
-
 The main goal of this tutorial is to study the behavior of the linear optics functions when we vary the FODO cell magnetic properties. For that, we will use the linear thin lens optics solution and the twiss MAD-X module. The results of the two approaches will be compared and discussed.
 
 By considering the periodic solution of the equation of motion for a FODO cell, and applying the thin lens approximation and the stability condition, we can derive the following relationships between the optical parameters, the magnet properties and the cell length:
@@ -52,7 +48,7 @@ Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a fu
 
 Questions:
 
-1. Using the thin lens approximation solution form Fig. 3 (left) compute the required strength to power the quadrupoles to obtain a phase advance in the FODO cell of 90$^{\circ}$. Then, compute the linear optics functions using MAD-X. What is the phase advance computed by MAD-X.
+1. Using the thin lens approximation solution form Fig. 3 (left) compute the required strength to power the quadrupoles to obtain a phase advance in the FODO cell of 90 degrees. Then, compute the linear optics functions using MAD-X. What is the phase advance computed by MAD-X.
 
 2. What is the $\beta_{max}$ value computed by MAD-X? Compare the obtained value with the thin lens approximation solution from Fig. 3 (right).
 
@@ -60,11 +56,9 @@ Questions:
 
 4. Compute the maximum beam size, $\sigma_{x,y}$,ƒ assuming a normalized horizontal and vertical emittance of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
 
-$\sigma_{x,y}=\sqrt{\beta_{x,y}}$
+    $\sigma_{x,y}=\sqrt{\frac{\beta_{x,y}\epsilon_n^{x,y}}{\gamma}}$
 
 ## Tutorial 3: Building a circular machine
-
-##Objectives:
 
 The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune, defined as the phase advance normalized by 2$\pi$, is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
 
@@ -73,7 +67,7 @@ Questions:
 1.    Consider the FODO cell designed in Tutorial 1 and add 4 sector dipoles of 15 m long, $L_d$, assuming a drift space between the magnets as illustrated in Fig. 4.  For computing the required bending angle consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<img src="Figures/Tutorial3_FODO.png" width="40%"/>
+<img src="Figures/Tutorial3_FODO.png" width="60%"/>
 </p>
 
 <p align="center">
@@ -93,8 +87,6 @@ Figure 4: Scheme of a FODO cell with dipoles.
 
 ## Tutorial 4: Natural chromaticity
 
-## Objectives:
-
 The main objectives of this tutorial is to study the impact of natural chromaticity of a FODO cell on the particles's beam dynamics by means of particle tracking studies. Fig. 5 illustrated the chromaticity concept in a quadrupole magnet. Orange and blue lines correspond to off-momentum particles and the green line represents the on-momentum particle. In this illustration, we observe a spread in the focusing effect of the quadrupole, which is caused by the energy spread of the beam, known as chromaticity.
 
 <p align="center">
@@ -108,17 +100,15 @@ In order to do this tutorial, we will use as starting point, the thin lens versi
 
 Questions:
 
-1. Using the chromaticity computed using the twiss command, compute the tunes for particles with $\delta p/p = 10^{-3}$ using the following equation:
+1. Using the chromaticity computed using the twiss command, compute the tunes for particles with $\Delta p/p = 10^{-3}$ using the following equation:
 
-$\Delta Q = dq \times \frac{\delta p}{p}$
+     $\Delta Q = dq \times \frac{\Delta p}{p}$
 
 2. Track two particles, one with initial coordinates x, y, px, py = (1 mm, 1 mm, 0, 0) and another one with initial coordinates x, y, px, py = (100 mm, 100 mm, 0, 0) in 100 turns. Plot the horizontal and vertical phase space, x-px and y-py respectively. How do the particles move in the phase space turn after turn? Do you see the tunes? Do you see any difference between the two particles? It may help to look only at the first 4 turns to get a clear picture.
 
-3. Repeat the tracking exercise but now for two of-momentum particles by adding a $\delta p/p = 10^{-2}$ to the initial particles' conditions. How does the phase space look now? Is the tune still the same?
+3. Repeat the tracking exercise but now for two of-momentum particles by adding a $\Delta p/p = 10^{-2}$ to the initial particles' conditions. How does the phase space look now? Is the tune still the same?
 
 ## Tutorial 5: Chromaticity correction and non-linearities
-
-## Objectives:
   
 The main objective of this tutorial is to install sextupoles in the FODO cell used in Tutorial 3 to correct the natural chromaticity and study the impact of the sextupoles on the particles's beam dynamics.
 
