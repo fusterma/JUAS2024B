@@ -76,10 +76,12 @@ Questions:
 Figure 4: Scheme of a FODO cell with dipoles.
 </p>
 
-In order to install the dipoles in the lattice use the following MAD_X commands:
+In order to install the dipoles in the lattice, first define the new element with the appropriate MAD_X command:
+
 	$mb : sbend, angle = ??, l = ??;$
 	
-And add them into the sequence description block:
+Then, introduce them into the sequence description block:
+
 	$mb1 : mb, at = position$
 
 2. Using the twiss command compute the linear optics functions. Do the dipoles (weak focusing) affect the maximum of the $\beta$-functions? And the dispersion? 
