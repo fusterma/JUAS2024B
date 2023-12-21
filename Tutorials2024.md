@@ -90,13 +90,13 @@ Then, introduce them into the sequence description block:
 
 4. Using the MAD-X match command on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
 
-	match, sequence = name;
-	global, q1 = ??;
-	global, q2 = ??;
-	vary, name = ??, step = 0.00001;
-	vary, name = ??, step = 0.00001;
-	lmdif, call = 50, tolerances = 1e-6;
-	endmatch;
+		match, sequence = name;
+		global, q1 = ??;
+		global, q2 = ??;
+		vary, name = ??, step = 0.00001;
+		vary, name = ??, step = 0.00001;
+		lmdif, call = 50, tolerances = 1e-6;
+		endmatch;
 
 5. If we change the beam energy to a total beam energy of 7 TeV, which are the new tunes of the machine? Why?
 
