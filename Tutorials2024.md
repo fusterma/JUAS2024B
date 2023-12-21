@@ -10,7 +10,7 @@ Questions:
 1.    Define a FODO lattice with:
 
       - the length of the cell, $L_{cell}$ = 100 m,
-      - two quadrupoles, one focusing (FQ) and another one defocusing (DQ) of 5 m long ($L_{q}$),
+      - two quadrupoles, one focusing (FQ) and another one defocusing (DQ), of 5 m long ($L_{q}$),
       - the start of the sequence placed at the start of the first quadrupole,
       - the quadrupole focal length f = 200 m. HINT: K1 x $L_{q}$= 1/f. 
 
@@ -21,7 +21,7 @@ Questions:
 Figure 1: FODO cell scheme with main parameters depicted.
 </p>   
 
-2. Define a proton beam with a total energy $E_{tot}$ = 2 GeV. Activate the sequence and compute the periodic linear optics functions with the twiss MAD-X command. Then, plot the $\beta$-functions. If you found a maximum $\beta$-function of 460 m you succeeded!
+2. Define a proton beam with a total energy, $E_{tot}$, of 2 GeV. Activate the sequence and compute the periodic linear optics functions with the twiss MAD-X command. Then, plot the $\beta$-functions. If you found a maximum $\beta$-function of 460 m you succeeded!
 
 3. Using the $\beta$-function plot obtained, can you estimate the phase advance of the cell? How does this value compare to the tune computed by MAD-X.
     
@@ -37,30 +37,32 @@ By considering the periodic solution of the equation of motion for a FODO cell, 
 <img src="Figures/equations.png" width="70%"/>
 </p>
 <p align="center">
-Figure 2: Equations relating linear optics parameters and magnet and cell characteristics.
+Figure 2: FODO cell equations relating linear optics parameters and magnet and cell characteristics.
 </p>  
 <p align="center">
 <img src="Figures/analytic.png" width="90%"/>
 </p>
 <p align="center">
-Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of magnet and cell characteristics.
+Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of the FODO magnets and cell characteristics.
 </p>  
 
 Questions:
 
-1. Using the thin lens approximation solution form Fig. 3 (left) compute the required strength to power the quadrupoles to obtain a phase advance in the FODO cell of 90 degrees. Then, compute the linear optics functions using MAD-X. What is the phase advance computed by MAD-X.
+1. Using the thin lens approximation solution form Fig. 3 (left) compute the required strength to power the quadrupoles to obtain a phase advance in the FODO cell of 90 degrees. Using the calculated K value, compute the linear optics functions using MAD-X. What is the phase advance computed by MAD-X?
 
-2. What is the $\beta_{max}$ value computed by MAD-X? Compare the obtained value with the thin lens approximation solution from Fig. 3 (right).
+2. And the $\beta_{max}$ value computed by MAD-X? Compare the obtained value with the thin lens approximation solution from Fig. 3 (right).
 
-3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
+3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\Delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
 
-4. Compute the maximum beam size, $\sigma_{x,y}$,ƒ assuming a normalized horizontal and vertical emittance of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
+4. Compute the maximum beam size, $ \sigma_{x, y} $,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad·mm and $E_{tot}$ = 7 TeV using the following relation:
 
     $\sigma_{x,y}=\sqrt{\frac{\beta_{x,y}\epsilon_n^{x,y}}{\gamma}}$
+    
+    where $\gamma$ stands for the relativistic factor.
 
 ## Tutorial 3: Building a circular machine
 
-The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune, defined as the phase advance normalized by 2$\pi$, is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
+The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune, defined as the phase advance normalized by 2$ \Pi $, is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
 
 Questions:
 
