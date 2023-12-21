@@ -54,7 +54,7 @@ Questions:
 
 3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\Delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
 
-4. Compute the maximum beam size, $ \sigma_{x, y} $,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad·mm and $E_{tot}$ = 7 TeV using the following relation:
+4. Compute the maximum beam size, $ \sigma_{x, y} $,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
 
     $\sigma_{x,y}=\sqrt{\frac{\beta_{x,y}\epsilon_n^{x,y}}{\gamma}}$
     
@@ -62,14 +62,14 @@ Questions:
 
 ## Tutorial 3: Building a circular machine
 
-The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune, defined as the phase advance normalized by 2$ \Pi $, is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
+The main goal of this tutorial is to install dipole magnets in the FODO cell designed in Tutorial 1 to build a circular machine as well as to study the impact of the dipoles into the linear optics functions. In addition, the MAD-X matching module will be used to define the required quadrupole's strength for getting a desired tune of the machine. The tune is a crucial parameter in the design of a circular machine for getting the desired beam quality and stability. 
 
 Questions:
 
 1.    Consider the FODO cell designed in Tutorial 1 and add 4 sector dipoles of 15 m long, $L_d$, assuming a drift space between the magnets as illustrated in Fig. 4.  For computing the required bending angle consider a ring with 736 dipoles with equal bending angles.
 
 <p align="center">
-<img src="Figures/Tutorial3_FODO.png" width="60%"/>
+<img src="Figures/" width="60%"/>
 </p>
 
 <p align="center">
