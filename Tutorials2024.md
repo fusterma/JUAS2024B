@@ -40,7 +40,7 @@ By considering the periodic solution of the equation of motion for a FODO cell, 
 Figure 2: FODO cell equations relating linear optics parameters and magnet and cell characteristics.
 </p>  
 <p align="center">
-<img src="Figures/analytic.png" width="90%"/>
+<img src="Figures/analytic.png" width="80%"/>
 </p>
 <p align="center">
 Figure 3: Phase advance (left) and maximum and minimum $\beta$-functions as a function of the FODO magnets and cell characteristics.
@@ -54,7 +54,7 @@ Questions:
 
 3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\Delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
 
-4. Compute the maximum beam size, $\sigma_{x, y}$,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
+4. Compute the maximum beam size, $\sigma_{x,y} $,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
 
     $\sigma_{x,y}=\sqrt{\frac{\beta_{x,y}\epsilon_n^{x,y}}{\gamma}}$
     
@@ -89,7 +89,7 @@ Figure 4: Scheme of a FODO cell with dipoles.
 
 ## Tutorial 4: Natural chromaticity
 
-The main objectives of this tutorial is to study the impact of natural chromaticity of a FODO cell on the particles's beam dynamics by means of particle tracking studies. Fig. 5 illustrated the chromaticity concept in a quadrupole magnet. Orange and blue lines correspond to off-momentum particles and the green line represents the on-momentum particle. In this illustration, we observe a spread in the focusing effect of the quadrupole, which is caused by the energy spread of the beam, known as chromaticity.
+The main goal of this tutorial is to study the impact of natural chromaticity of a FODO cell on the particles's beam dynamics by means of particle tracking studies. Fig. 5 illustrated the chromaticity concept in a quadrupole magnet. Orange and blue lines correspond to off-momentum particles and the green line represents the on-momentum particle. In this illustration, we observe a spread in the focusing effect of the quadrupole, which is caused by the energy spread of the beam, known as chromaticity.
 
 <p align="center">
 <img src="Figures/Tutorial4_chroma.jpg" width="50%"/>
@@ -98,7 +98,7 @@ The main objectives of this tutorial is to study the impact of natural chromatic
 Figure 5: Chromaticity effect illustration.
 </p>
 
-In order to do this tutorial, we will use as starting point, the thin lens version of the lattice designed in Tutorial 3 and we will consider a 7 TeV total energy proton beam. For this tutorial de use of a thin lens is mandatory in order to use the track module. The makethin command should be used for this purpose. Additionally, after running the makethin command, it will be necessary to perform a rematch of the lattice to ensure that the horizontal and vertical tunes of the FODO cell remain at 0.25.
+In order to do this tutorial, we will use as starting point, the thin lens version of the lattice designed in Tutorial 3 and we will consider a 7 TeV total energy proton beam. Here, the use of a thin lens lattice is mandatory in order to use the track MAD-X module. The makethin command should be used for this purpose. Additionally, after running the makethin command, it will be necessary to perform a rematch of the lattice to ensure that the horizontal and vertical tunes of the FODO cell remain at 0.25.
 
 Questions:
 
@@ -135,9 +135,9 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 
 2. Using the strength of the sextupoles, $K2_{1}$ and $K2_{2}$ and the linear optics functions ($\beta$-function and dispersion) at the sextupole' location, evaluate the sextupole's contribution to the chromaticity on the horizontal plane using the following equation: 
 
-    $\phi=\{1}{4\pi}(\beta_{x,s1}k2_1d_{x,s1}+\beta_{x,s2}k2_2d_{x,s2})$.
+    $\psi=\fracc{1}{4\pi}(\beta_{x,s1}k2_1d_{x,s1}+\beta_{x,s2}k2_2d_{x,s2})$.
     
-Then, compare the obtained values to the chromaticity value obtained in Tutorial 4.
+Then, compare the obtained values with the chromaticity value obtained in Tutorial 4.
 
 
 3. Track two particles, one with initial coordinates x, y, px, py = (1 mm, 1 mm, 0, 0) and another one with initial coordinates x, y, px, py = (100 mm, 100 mm, 0, 0) and both with $\Delta p/p = 0.01$ for 100 turns. Plot the horizontal and vertical phase space, x-px and y-py respectively. Did you manage to recover the original tune for the off-momentum particle? Do you see the tunes? What is going on?
@@ -148,7 +148,9 @@ Then, compare the obtained values to the chromaticity value obtained in Tutorial
 
  The main objective of this tutorial is to design a transfer line and setting the linear optics functions at the end of the line to some desired values. Matching studies for different initial conditions will be performed and the results discussed.
 
-1. Build a transfer line for a 2 GeV proton beam of 10 m total length, $L_{tot}$, with 4 quadrupoles of 0.1 m long, $L_q$, and 0.1 m$^{-2}$. Place the quadrupoles centered at 2, 4, 6, and 8 m. What is the error message that you get if you try to find a periodic solution? Why? 
+Questions:
+
+1. Build a transfer line for a 2 GeV proton beam of 10 m total length, $L_{tot}$, with 4 quadrupoles of 0.1 m long, $L_q$, and 0.1 $m^{-2}$. Place the quadrupoles centered at 2, 4, 6, and 8 m. What is the error message that you get if you try to find a periodic solution? Why? 
 
 <p align="center">
 <img src="Figures/Tutorial6_TransferLine.png" width="50%"/>
@@ -158,10 +160,10 @@ Then, compare the obtained values to the chromaticity value obtained in Tutorial
 Figure 6: Transfer line scheme.
 </p>
 
-2. Calculate the linear optics functions for the transfer line assuming ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) at the start of it. What are the values of the linear optics functions at the end of the transfer line ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$)?
+2. Compute the linear optics functions for the transfer line assuming ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) at the start of it. What are the values of the linear optics functions at the end of the transfer line ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$)?
 
-3. Starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) match the line to get at the end the following optics ($\beta_{x, end2}$ , $\alpha_{x, end2}$ , $\beta_{y, end2}$ , $\alpha_{y, end2}$) = (2 m, 0, 1 m, 0).
+3. Starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) match the line to get at the end of the transfer line the following optics ($\beta_{x, end2}$ , $\alpha_{x, end2}$ , $\beta_{y, end2}$ , $\alpha_{y, end2}$) = (2 m, 0, 1 m, 0).
 
-4. Now, starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) and the quadrupoles' strength computed in question 3, match to the ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$) found in the question number 2. Can you find back the initial quadrupoles' strength from question 1 of 0.1 m$^{-2}$?
+4. Now, starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) and the quadrupoles' strength computed in question 3, match to the ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$) found in the question number 2. Can you find back the initial quadrupoles' strength from question 1?
 
-5. Consider that the quadrupoles have an excitation current of a 100 A·$m^2$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions obtained in question 2 and 4 assuming a linear regime and use a dimensional approach.
+5. Consider that the quadrupoles have an excitation current of a 100 A·$m^{2}$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions obtained in question 2 and 4 assuming a linear regime and using a dimensional approach.
