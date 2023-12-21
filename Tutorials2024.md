@@ -54,7 +54,7 @@ Questions:
 
 3. Reduce by half the focusing strength of the quadrupoles, what is the effect of it on the $\beta_{max}$, $\beta_{min}$ and $\Delta \mu$? Compare the obtained values with the thin lens approximation from Fig. 3.
 
-4. Compute the maximum beam size, $\sigma_{x,y} $,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
+4. Compute the maximum beam size, $\sigma_{x,y}$ ,ƒ assuming a normalized horizontal and vertical emittance, $\epsilon_n^{x,y}$, of 3 mrad mm and $E_{tot}$ = 7 TeV using the following relation:
 
     $\sigma_{x,y}=\sqrt{\frac{\beta_{x,y}\epsilon_n^{x,y}}{\gamma}}$
     
@@ -135,7 +135,7 @@ Figure 7: FODO cell with dipoles and sextupoles scheme.
 
 2. Using the strength of the sextupoles, $K2_{1}$ and $K2_{2}$ and the linear optics functions ($\beta$-function and dispersion) at the sextupole' location, evaluate the sextupole's contribution to the chromaticity on the horizontal plane using the following equation: 
 
-    $\psi=\fracc{1}{4\pi}(\beta_{x,s1}k2_1d_{x,s1}+\beta_{x,s2}k2_2d_{x,s2})$.
+    $\xi=\frac{1}{4\pi}(\beta_{x,s1}k2_1d_{x,s1}+\beta_{x,s2}k2_2d_{x,s2})$.
     
 Then, compare the obtained values with the chromaticity value obtained in Tutorial 4.
 
@@ -166,4 +166,4 @@ Figure 6: Transfer line scheme.
 
 4. Now, starting from ($\beta_{x}$ , $\alpha_{x}$ , $\beta_{y}$ , $\alpha_{y}$) = (1 m, 0, 2 m, 0) and the quadrupoles' strength computed in question 3, match to the ($\beta_{x, end1}$ , $\alpha_{x, end1}$ , $\beta_{y, end1}$ , $\alpha_{y, end1}$) found in the question number 2. Can you find back the initial quadrupoles' strength from question 1?
 
-5. Consider that the quadrupoles have an excitation current of a 100 A·$m^{2}$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions obtained in question 2 and 4 assuming a linear regime and using a dimensional approach.
+5. Consider that the quadrupoles have an excitation current of a 100 A · $m^{2}$ and an excitation magnetic factor of 2 T/m/A and an aperture of 40 mm diameter. Compute the magnetic field at the poles of the four quadrupoles for the two matching solutions obtained in question 2 and 4 assuming a linear regime and using a dimensional approach.
