@@ -78,22 +78,29 @@ Figure 4: Scheme of a FODO cell with dipoles.
 
 In order to install the dipoles in the lattice, first define the new element with the appropriate MAD_X command:
 
-	$ mb : sbend, angle = ??, l = ??; $
+	 mb : sbend, angle = ??, l = ??; 
 	
 Then, introduce them into the sequence description block:
 
-	 mb1 : mb, at = position; 
+	 mb1 : mb, at = ??; 
 
 2. Using the twiss command compute the linear optics functions. Do the dipoles (weak focusing) affect the maximum of the $\beta$-functions? And the dispersion? 
 
 3. From the phase advance of the FODO cell compute the horizontal and vertical tunes of the machine.
 
-4. Using the match command on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
+4. Using the MAD-X match command on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
+
+	match, sequence = name;
+	global, q1 = ??;
+	global, q2 = ??;
+	vary, name = ??, step = 0.00001;
+	vary, name = ??, step = 0.00001;
+	lmdif, call = 50, tolerances = 1e-6;
+	endmatch;
 
 5. If we change the beam energy to a total beam energy of 7 TeV, which are the new tunes of the machine? Why?
 
 6. What is the maximum tune that you can reach with such a lattice? HINT: what is the maximum phase advance per FODO cell in the thin lens approximation?
-
 
 ## Tutorial 4: Natural chromaticity
 
