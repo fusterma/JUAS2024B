@@ -76,7 +76,7 @@ Questions:
 Figure 4: Scheme of a FODO cell with dipoles.
 </p>
 
-In order to install the dipoles in the lattice, first define the new element with the appropriate MAD_X command:
+In order to install the dipoles in the lattice, first define the new element with the appropriate MAD-X command:
 
 	 mb : sbend, angle = ??, l = ??; 
 	
@@ -88,9 +88,9 @@ Then, introduce them into the sequence description block:
 
 3. From the phase advance of the FODO cell compute the horizontal and vertical tunes of the machine.
 
-4. Using the MAD-X match command on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
+4. Using the MAD-X match block on a single FODO cell, match the tunes of the machine to 46.0 in both planes.
 
-		match, sequence = name;
+		match, sequence = ??;
 		global, q1 = ??;
 		global, q2 = ??;
 		vary, name = ??, step = 0.00001;
